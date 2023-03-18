@@ -1,0 +1,61 @@
+Python as Programming Language
+	1. Development
+	2. Monolithic Architecture
+	3. Micro Services
+		RESTAPI --
+		gRPC
+
+	4. Python Community
+	5. Infrastructure as Code --- Terraform/CDK/
+	6. Automation 
+		1. Cloud Automation
+		2. Open Source Tool Automation
+		3. SDK --- Software Development Kit
+			1. boto3
+	7. Machine Learning
+		1. Tensorflow
+		2. Keras
+		3. PyTorch
+		3. Amazon MxNet
+		4. ScikitLearn
+		..........
+
+	8. Data Science
+		1. Matlab
+		2. R
+		3. Python
+
+	9. Testing
+	10. Web Development
+
+
+
+Python Setup:
+----
+	1. Installation
+		1. Windows: 
+		----	Environment Path Setup--
+			1. Location
+			2. pip --version
+		---- VS Code installation
+
+		2. Ubuntu:
+		----    sudo apt update
+			sudo apt install python3 -y
+
+			pip --version
+		---- VS Code Instalation
+
+		3. MacOS
+		----    brew install python3
+			pip --version
+		---- VS Code Installation
+
+	2. Python Works
+	3. Different Ways
+		1. Scripting Language
+		2. Experimentation -- Jupyter Notebook
+		3. Commandline
+	4. Environments
+	5. Java 
+	

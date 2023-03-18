@@ -1,0 +1,68 @@
+Introduction to the Course
+
+	1. Data: raw information
+		1. Structural Data
+		2. Unstructral Data 
+		3. Image Data
+		4. Audio Data
+		5. Video Data
+
+
+	2. Data Engineering : Engineering the data
+		1. Raw Data/ Source Data
+			--- RDBMS
+				OnPremise
+				Coud
+			--- OnPremise -- MongoDB
+				Cloud -- DynamoDB,S3,File
+
+		2. Automation: 
+			--- Python
+			--- Cloud-AWS
+			--- Hadoop, Spark, Distributed Systems
+			--- Stages: 
+				1. Ingestion --- Tools
+				2. Curation --- ML
+				3. Unification --- Data warehousing
+				4. Transformations
+				5. Fingerprinting -- ML
+				6. Tagging --- ML
+				7. Indexing --- ML
+
+
+	3. Data Science:
+		1. Data
+		2. Mathematics
+		3. Machine Learning
+			--- Structural Machine Learning
+			1. Linear Regression
+			2. Logistic Regression
+			3. SVM
+			4. Decision Trees
+
+		4. Artificial Neural Networks:
+			1. Perceptron/ Neuron
+			2. Single Layer Neural Network
+			3. Multi Layer Neural Network
+			4. ML Stratagies
+
+		5. Deep Learning
+			1. Deep Neural Networks
+			2. Computer Vision
+			3. NLP
+
+		
+
+
+	Tools, Frameworks:
+		--- Machine Learning Yearning by Andrew NG
+		--- Tensorflow, Keras, 
+		--- Distributed System --- Serverless System
+
+			
+
+
+
+
+
+

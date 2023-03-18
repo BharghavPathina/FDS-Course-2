@@ -1,0 +1,49 @@
+Inroduction to Data Science Libraries:
+    1. Numpy
+    2. OpenCV -- CV2
+    3. Pandas
+    4. Tensorflow - Keras
+    5. PyTorch
+    6. MXNet
+    7. Scikit Learn
+    8. Caffe
+
+Data Science (Machine Learning, Artificial Intelligence, Deep Learning) --- for all of these problems
+the solustion will be higher order mathematical problems
+
+--- The solutions will be converted to graphical execution
+
+    1. Example:
+        a = 1
+        b = 2
+        c = a+b
+        d = b+1
+        e = c+d
+
+    2. Parallilized execution
+        --- Matheamtical Statements should be clustered into clusters
+        --- For each cluster of statements we can have a graph notation
+        --- 1. CPU Latency will be reduced
+        --- 2. Graph Execution
+        --- 3. GPU, FPGA, TPU
+
+
+1. Numpy --- CPU only
+2. Tensorflow, PyTorch, MxNet --- We can write programs in such a way that that can utilize the power of hardware.
+3. Machine Learning Engines --- CUDA
+
+    f(x) = m1x1+m2x2+......
+
+
+
+NUMPY -- Linear Algebra 
+
+OPENCV -- Images --- GPU
+
+PANDAS -- CSV & Excel Files
+
+MatplotLib --- To plot mathematical/statistical graphs
+
+Tensorflow, PyTorch, MxNet --- Graphical Executed Frameworks --- CPU, GPU
+
+

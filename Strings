@@ -1,0 +1,33 @@
+1. String -- List of Characters -- Array of Characters (ORDER)
+2. Strings are immutable
+	name = "Manoj"
+	index = position-1
+	Array or List indices are started with 0
+	name[0] = "m"
+	strings cannot be updated.
+3. String Concatenation -- Addition Operation
+	a = "Manoj"
+	b = "Kumar"
+	c = a+b
+	c = "ManojKumar"
+	**** All data types in Python are objects
+	-- Every object will have reference. ---> Location of data
+	-- C language is more usefull higher control of memory management of data.
+4. Substrings
+	c = "ManojKumar"
+	Slicing -- 
+	[startIndex:endPosition]
+	--- [5:10]
+	substring = c[5:10]
+	[:5]
+	subString1 = c[:5]
+	subString2 = c[5:]
+
+5. String Exploration --- Assignment - 1
+	1. Split --
+	2. Strip --
+	3. etc.
+
+
+
+	

@@ -1,0 +1,49 @@
+LMS
+    1. USER
+        1. STUDENT
+            1. LOGIN -- CHECK IN
+            2. STUDENT MENU
+                1. BOOKS
+                    1. FIRST
+                        1. FIRST YEAR MENU
+                            1. MATHS1 --- LOCATION
+                            2. CPROGRAMMING --- LOCATION
+                    2. SECOND
+                        2. SECOND YEAR MENU
+                    ....
+                    ....
+                
+                2. ADMIN RELATED QUESTIONS
+                    1. LOST ID--- INFO
+                    2. LOST PASSWORD -- INFO
+            3. LOGOUT
+        2. TEACHERS -- LOCATION
+            1. LOGIN -- CHECK IN
+            2. TEACHER MENU
+                1. BOOKS   
+                    1. CSE 
+                        1. CPROGRAMMING 
+                        2. jdvbsdsdjbv    
+                    2. CIVIL
+                        1.dfbsdufb
+            3. LOGOUT
+    2. ADMIN
+        1. LOGIN -- CHECK IN
+        2. ADD BOOKS
+        3. REMOVE BOOKS
+        4. DISPLAY BOOKS OVER YEAR
+        5. DISPLAY BOOKS OVER DEPARTMENT
+        6. CREATE NEW USER
+        7. DELETE USER
+        8. UPDATE USER
+
+    3. BOOK
+        1. STUDENTS_BOOKS20
+            1. CSE
+                1. FIRSTYEAR
+                    1. MATHS -- 40
+                    2. CPROGRAMMING -- 20
+                2. SECONYEAR
+            2. CIVIL
+            3. MECH
+        2. TEACHERS_BOOKS

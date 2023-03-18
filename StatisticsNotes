@@ -1,0 +1,153 @@
+Structural Data:
+    - Rows/Columns
+    - Rows --- Examples/Observations/Instances/Fields
+    - Columns --- Features/Attributes/Series
+
+
+Statistics of Data:
+    - Measures of Central Tendencies
+
+Basic Statistcal Summary of the Data:
+Central Tendency/Feature:
+    - Numerical Data:
+        Central Tendencies: Mean, Median & Geometric Mean
+            - Example: 
+                1. Age: [1,1,1,10,12,13,10,12,18,18,18,25,25,25,25,25,30,30,30,45,40,45,45,50,55,60,120]
+                    -- children -- 3
+                    -- Youngsters -- 5
+                    -- Medium Range -- 11 --- Central Tendency == # no of instances/examples/rows --- Range
+                    -- Senior Citizens -- 4
+                    -- Super Senior ---- 3
+
+                    --- 3738
+
+                    Central Tendency:
+                        --- [18-30]
+                        --- 11
+                        --- Mean --- sum of all values/total number of values
+                            --- Mean is highly senstitive to outliers/odd data
+                        --- Median --- 
+                            --- Sort the values first --> find the middle number
+                            --- median is 25
+                        --- gmean ---
+                            --- x1,x2,x3,....
+                            --- gmean = sqrt(x1x2x3...)
+                            --- gmean considerations
+                                1. values should not be null
+                                2. zeros should not be there
+
+            --- Alert: Numerical columns
+                    if abs(gmean-median) is 5:
+                        there no outliers
+                    elif there is high difference:
+                        there are outliers
+
+            --- Alert: 
+                    if abs(max-median) is large:
+                        maximum is an outlier
+                    else:
+                        data is proper
+
+                        ## Finding mean in time complexity --- O(n)
+                        ## Finding median in time complexity -- O(nlogn) -- Best sort algorithm will (nlogn)
+    - Categorical Data:
+        Central Tendencies: Mode
+        -- NonImportantNominal Attributes / ID Columns / Index Columns--- There is no point of doing central tendencies
+        -- ImportNominal/Binary/Ordinal Attributes --- 
+            --- Mode - Most repeated category
+
+    Advanced Central Tendencies:
+        - Dispersion
+            - Skew Score
+            - Kurtosis Score
+        - Standard Deviation
+        - Variance
+        - Range
+        - Boxplot
+        - IQR
+
+    --- Normal Distributed Graphs --- Statistical values --- determines
+    --- Binamial Distributed Graphs
+    --- Uniform Distributed Graphs
+    --- Gaussian Graphs
+    --- Skewed Graphs
+    --- Kurtosis Graphs
+    
+
+How the data is distributed / dispersed around the central tendency
+
+Measures of Dispersion of data:
+    --- Range of the Age Data --- (0-120) -- (min,max)
+    --- Range of the Fare / Price --- (200-20000)
+
+    --- Boxplot --- ****
+        -- Q1
+        -- Q2 -- Median
+        -- Q3
+
+    IQR --- Q3-Q1
+
+
+    **** If the data is normal distribution --- desired data --- STD == 1.96 then 95 - 100% of data around the central centency
+
+
+Correlation:
+
+    Realtion between attributes
+    --- n*(n-1) no of permutaions of correlations -- (np2)
+    --- n is the number of attributes
+    --- NP-Hard problem/DP problem
+        numerical == (interval scaled, ratio scaled)        
+        categorical == (binary, ordinal, nominal)
+        5*4 = 20 combinations
+        you have to find the for particular combination types 
+        for a particular combination -- particular correlation formulae
+
+        Coefficient Correlation (R) = x1,x2
+        m number of examples/rows
+
+            Sigma(1 to m) (x1-median1)(x2-median2)/sqrt(x1-median1)^2sqrt(x2-median2)^2 === (-1,+1)
+
+            R = 0 then x1,x2 are not related/ independent features
+            CORRELATION THRESHOLD = 0.05
+            R = abs(R) is approaches to 1 then they are highly related
+            R = aproaches to -1 then we can call this as negatively related
+            R == aproaches to +1 then we can call this as positively related
+
+            R > correlation threshold ---> related 
+
+
+
+Feature Engineering:
+    --- What happens the populated wrongly populated zeros?
+    --- What are your considerations on correlations of a particular variable for a particular permutaion
+    --- How you will handle the situations?
+    --- Importance of Label
+    --- Correlation with the label
+    --- Scaling of feature values
+    --- Scaling of features
+
+Matplotlib plots:
+    plotting different plots in python
+
+Pandas different functions:
+    
+
+
+YDATAPROFILING -- CORRELATIONS:
+
+    --- LABEL: 
+        --- Labelling data:
+    --- Correlations with label for all variables:
+        --- THRESHOLD for Correlation = 95%
+
+
+    --- Based on correlation scores if you find the data is more likely non linear --- Neural Networks -- Non linear complex higher order mathematical functions..
+    --- Linear simple higher order mathematical functions
+    --- Decision Trees --- good number of categorical variables -->
+        Ensemble methods: 
+            Random Forests
+
+
+
+                

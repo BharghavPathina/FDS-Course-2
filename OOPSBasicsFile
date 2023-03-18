@@ -1,0 +1,25 @@
+rs. ---- When you are accessing instance properties inside the class using self, you can access all properties irrespective of access specifiers
+                -- outside the class only public instance properties will be accessed through object.
+
+        3. Member Point --- memory management
+                -- (->)
+                -- (.)
+
+
+Class Constructors:
+        1. def __init__(self,a,b,c):
+        2. constructors will be called at the time of creation of an object
+                object_name = class_name() --- default constructor will be called if there is no constructor defined
+        3. Default constructor contains nothing --- object has no instance properties but it can have class properties and access permission for member methods.
+Object State:
+        --- When we are creating an object it has all class properties, instance proprties and member methods.
+
+        --- object state will be determined by the values of the properties
+
+
+
+Class Methods, Instance Methods
+
+        1. class methods --- are common methods of a class
+                         --- @classmethod
+

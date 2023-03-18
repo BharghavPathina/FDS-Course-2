@@ -1,0 +1,93 @@
+Conditional Statements ---- Logic & TestCases 
+
+	IF - ELSE
+
+	--- Control Statements
+
+	IF - ELIF - ....... - ELSE
+
+	1. IF & ELIF will have condition
+	2. ELSE don't have any condition
+
+	SYNTAX: 
+	
+
+	Conditional Operators:
+	1. <, >, <=, >=, ==, !=, and/(&&), or(||), bitwise and bitwise or***
+	2. in, not in, is, is not
+
+	--- False --- False/0/[] ---- None
+	--- True ---- True/Other Than Zero ----
+
+	statement == LHS and RHS
+	expression == RHS
+	indentation
+	block --- collection of code lines
+
+	
+	if <condition expression>:
+	   	<statements.....>
+	elif <condition expression>:
+		<statements.....>
+	...
+	else:
+		<statements.....>
+
+
+	if <condition expression>:
+	   	<statements.....>
+	if <condition expression>:
+	   	<statements.....>
+
+
+	if <condition expression>:
+	   	<statements.....>
+	else:
+		<statements.....>
+	
+
+String Formatting --- Print Formatting
+
+"--- is reading"
+
+Loops:
+
+	--- 1. Loops over Lists foreach ------ for element in list: --- You wont get index
+	--- 2. Loops to iterate -------------- index along iterate --- for i in range(len(list)):
+	
+
+Time Complexity & Pen Paper Analysis:
+
+	Search
+	--- Best Case: O(1)
+	--- Average Case: O(n/2)
+	--- Worst Case: O(n)
+
+
+	1. Sort -- Alphabetical Order --- Binary Search
+		----- Log Series.....  N,N/2, N/4, N/8, N/16
+		log(N)
+
+		Average Case --- O(logn)
+
+	 Distributed System --- Hadoop --- MapReduce
+
+
+**** Conditional Looping -- While
+
+	flag = True
+	while flag:
+		sjjdfbsdj
+		jkskskn
+		flag = False
+
+
+Stride ---- step
+Range ---- 
+	1. range(i,j)
+	2. range(i,j,k)
+	3. range(10,0,-1)
+	4. range(10)
+
+
+Assignment2 --- Implement Prime Number or Not

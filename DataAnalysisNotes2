@@ -1,0 +1,47 @@
+Statistics:
+    --- Attributes
+        1. Numerical Attributes
+            1. Ratio-Scaled -- Age 
+            2. Interval-Scaled -- Temperature  -- K
+        2. Categorical Attributes   
+            1. Binary Attributes
+            2. Ordinal Attributes
+            3. Nominal Attributes
+
+    --- Distribution
+        1. Normal Distribution
+            1. Skewness
+            2. Kurtosis
+        2. Uniform Distribution / Balanced Distribution
+        3. Imbalanced Distribution
+
+    
+    --- Featuring Engineering Project -- (FEP)
+        1. Feature Importance
+            1. Numerical features
+            2. Cat Features
+            3. Balanced Data/Imbalanced Data
+            4. Zeros
+            5. Same Values
+            6. Outliers
+            7. Duplicates, etc.
+            8. Coefficient of Correlation -- R
+
+    --- Project Code
+        1. Project Folder Heirarchy
+        2. Dependencies -- PATHs, Shell Scripting
+        3. Utilities
+            1. Read Utils
+            2. Process Utils
+            3. Visual Utils
+
+    --- Implementation Strategy
+            1. Efficient in terms of
+                1. hardware --- Pandas
+                    1. In memory Processing -- Dataframes
+                    Disadvantage-- doesn't scale for bigdata
+            2. Scalability 
+                    1. Spark 
+            3. Availability 
+
+

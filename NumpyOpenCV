@@ -1,0 +1,39 @@
+Hardware details & importance of hardware w.r.t Data science
+Numpy:
+    1. Parallel Execution
+    2. Arrays
+        1. scalar
+        2. vector
+        3. 0 dimensions
+        4. 1 dimensions
+        5. 2 dimensions
+        6. 3 dimensions
+        7. n dimensions
+    3. Represenation / Visualization of Arrays
+    4. 3D Array Slicing
+    5. Basic Numpy Functions
+    6. Explicit Type Cast to ndarray
+    
+*** You have to visualize atleast 3D array
+*** You have to very aquaitance with writing dimensions for given array
+*** you should confirm that Numpy follows Vectorization & Broadcasting
+
+
+OpenCV:
+    1. GPU
+    2. OpenCV Array -- Numpy Arrays
+    3. Colored Image
+        1. channels -- R,G,B
+    4. Preprocessing
+        1. Image Reading Format
+        2. Image Color COnvertions & importance
+        3. Normalization -- Scaling --- [0-1]
+    5. PostProcessing
+        1. Color Extraction -- extcolors
+        --- Assignment -- extracting distinct colors from an image.
+        2. Contours for only one color --- Array of points
+        3. How to draw border
+    6. uint8 
+
+
+

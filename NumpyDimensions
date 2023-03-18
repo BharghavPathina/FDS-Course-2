@@ -1,0 +1,65 @@
+Dimensions Notation for 1D: 
+    -- Notations: (width,)
+    -- height = 1
+
+Dimensions: or Shape
+    -- Notation: (Height * Width)
+    -- Height = Number of rows
+    -- Width = Number of cols
+
+ndarray.shape -- property for ndarray
+
+single Dimension --- memoery reference will be only one 
+2 Dimension -------- memoery reference will be only one 
+    1. Rows --- Each row will have reference
+
+    -- initial reference = <address>
+    -- int type of data in arrays
+    -- shape of the array (3,2)
+    -- give me the address of the 3 row 
+        --- How the data is compressed
+        --- by default the data will be quantized to normal -- int32
+        --- second address of the second row  will be = <address> + 8Bytes
+        --- third row address will be = <second row address> + 8Bytes
+        ---                             <addres> + 8Bytes +8Bytes       
+                                        <address> + 2 * 8 8Bytes    
+                                        <address> + row_index * width * size of the quantized data type
+                                        
+
+
+If depth = 3:
+    then (Height,width,3) -- 3D
+
+    
+Colors --- RGB
+        3D  
+        Colors = (R,G,B)
+
+
+        Color_Image == height * width * 3
+        Resolution = (Height,Width)
+
+            
+Dimensions - Notation for 3D
+
+        Height * width * depth
+        depth == Number of channels
+        channel == (height,width)
+
+        (height, width, 2) its not 2D
+        (height, width, depth)
+
+        Units will be applied to Height, width
+
+
+
+Dimensions - Notation for ND:
+
+        Number of 3Ds * Height * width * depth
+
+        10 * 2 * 2 * 10
+
+
+
+Vectorization & Broadcasting
+

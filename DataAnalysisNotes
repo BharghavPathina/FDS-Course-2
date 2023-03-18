@@ -1,0 +1,78 @@
+Project Hirarchy
+    1. Dockerfiles
+        Container -- 
+    2. Packages
+        Common
+            Config
+            libs
+        Utils
+            read_utils.py
+            process_utils.py
+            analyze_utils.py
+        assets
+            maintains files
+            for devevlopment puprose
+        credentials.py
+        
+        These assets and credentials should be ignored while pushing code to github
+        
+    3. Path
+        1. Relative Path
+        2. Absolute Path
+        3. setup.sh
+            PYTHONPATH --- relative path
+            Appending our PWD
+            import sys
+            sys.path.append("./")
+
+
+
+Problem Statement:  For a given CSV dataset we need to Feature Engineering
+
+Problem Approach:
+        1. Input is CSV dataset 
+            --- Large
+            --- Raw dataset
+            --- Lot of problems
+                --- zeros values
+                --- same values
+                --- Date type issues
+                --- Null values
+                --- Lot of features 300-1000
+                --- Duplicates
+
+        2. Output
+            --- Processed dataset
+            --- May be features can be reduced
+            --- Alerts ---- it costs more
+            --- Data Sanitization
+            --- Report
+
+Python Modules:
+        1. Pandas
+        2. Numpy
+        3. Matplotlib/seaborn
+        4. pyspark
+        5. ydata_profiling
+
+Concepts:
+        1. Statistics
+        2. Probability Distributions
+        3. Pandas Concepts
+        4. Git
+
+Framework:
+        1. Spark
+
+
+
+
+
+NominalFeatures: 
+    --- Examples: -- ID, EMP_ID, NAMES, ADDRESS, PHONE_NUMER, MaritalStatus, Gender
+
+OrdinalFeatures:
+    --- Examples: -- Status, Rating, Rank
+
+BinaryFeatures:
+    --- Examples: -- Gender

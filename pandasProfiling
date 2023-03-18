@@ -1,0 +1,14 @@
+n = #examples/#rows/#instances/#observations
+n_var = #variables/#features/#attriutes/#columns
+
+
+#unique
+#distinct
+
+
+
+[1,2,3,1,1,2,34,1,5,7]
+
+
+distinct = [1,2,3,34,5,7]
+unique = [34,5,7,3]

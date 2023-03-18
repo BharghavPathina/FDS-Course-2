@@ -1,0 +1,29 @@
+Functions:
+
+
+1. Positional Arguments
+	--- Can be given as direct values based on positions in the definition
+	--- Can also be given as keyword arguments
+	--- Required Arguments
+		** missing 1 required positional argument
+
+2. Keyword Arguments
+	--- Can be given from the call of the function
+	--- Required arguments
+		** missing 1 required positional argument
+	--- can be defined at the calling of function
+
+3. Default Arguments
+	--- Positional arguments should not follow default arguments
+	--- Required Arguments should not follow default arguments
+	--- keyword only arguments can be interchangable with default arguments
+	--- Can only be defined at the definition of function
+
+4. Positional Only Arguments
+	--- Cannot also be given as keyword arguments
+	--- all arguments before / are positional only arguments
+	--- Can only be defined at the definition of function
+
+5. keyword only arguments
+	--- Can only be defined at the definition of function
+	--- all arguments after * are keyword only arguments

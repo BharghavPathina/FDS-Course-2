@@ -1,0 +1,46 @@
+Python as a Programming Language
+
+--- Programming ---- Is an engineering way to talk to a computer
+
+--- Computer ------- COmputer is a collection of CPU, Memory, I/O
+
+
+--- CPU ------------ Central Processing Unit ---- Input ---
+			1. ALU
+			2. Control Unit
+
+
+		5+3 
+		1. 5 --- Binary Number
+		2. 3 --- Binary Number
+		3. + --- Signal --- Clock 2.5G 
+
+
+	---- Binary 
+	---- Assembly Language
+	---- C programming 
+	---- Python Progamming
+
+
+
+	--- Instructurs --- Code --- Memory
+	--- 
+
+
+Python ---
+	1. Interpretation and Compilation
+
+	---- Interpreation: Every Instruction executes at a time
+	---- COmpilation: Whole instructures will be executed a process
+
+
+Python is an Intepreted Language
+C is an Compiled Language ---- Platform Dependent
+
+Java is an Hybrid Language --- Platform Independenct --- Byte Code 
+Compilation & Interpretation -- 
+
+Platform Dependent --- Independent
+
+
+Virtualization --- JVM 

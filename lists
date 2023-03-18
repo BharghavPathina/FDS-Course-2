@@ -1,0 +1,63 @@
+Lists ---- Sequence of values/elements
+String --- Sequence of characters
+
+Lists, Tuples ordered.
+Example: 
+	A = [1,2,3,4]
+	B = [6,2,4,1]
+
+	A = ["Manoj","Venkat","Tharun",""]
+
+	A = ["Manoj",2,1,1.6,"Kumar"]
+
+	A = [[1,2,3],[1,2]] --- nested lists
+
+	ORDER IN SENSE OF POSITION 
+
+Lists are mutable --- Any position can be updated
+
+List accessing & extraction | slicing
+	A[2] --
+	A[0:3] -- A[:3]
+	
+	1. I have list of 100 elements. I need to extract last 5 elements. Give me slice..?
+
+		posistions === 1-100
+
+		last 5th element position --- 96
+		last 5th element index ------ 96-1 = 95
+
+	
+		A[95:] 
+
+	2. Negative Indexing
+		positions and indices are same but in reverse.
+
+		positions === 1-100
+		indices === 1-100
+
+		last 5th element position ---- -5
+		last 5th element index ------- -5
+
+		A[-5:]
+
+
+NESTED LISTS ---- INDEXING *****
+
+
+Digression of Equality:
+
+Memory references of objects
+
+	A = [1,2,3]
+	B = [1,2,3]
+
+To check memory references we have "is" operatror
+
+
+Concatenation:
+
+	C = A+B
+	C = [1,2,3][1,2,3]
+	C = [1,2,3,1,2,3]
+

@@ -1,0 +1,51 @@
+OOPs Conecpts:
+
+    1. Class
+    2. Object
+    3. Properties
+    4. Methods
+    5. Abstraction
+    6. Encasupation
+    7. Inheritance
+    8. Polymorphism
+
+
+Inheritance: 
+    1. Parent or Base
+    2. Child
+
+    Inheritance is the concept of inheriting the protected and public characteristics (Properties and Member Functions) from base (parent) class.
+
+    Types of Inheritance:
+        1. Single Inheritance
+        2. Multiple Inheritance
+        3. Multilevel Inheritance
+        4. Hybrid Inheritance
+        5. Hierarchial Inheritance
+
+    protected properties and protected memeber methods are accessible in same package and to the classes of which the defined class was inherited.
+
+1. Single Inheritance: inheriting characteristics from Single parent
+
+2. Multiple Inheritance: inheriting characteristics from more than one parent
+
+3. Multilevel Inheritance: Is a Single Inheritance with levels -- Associative Property
+
+4. Hierarchial Inheritance: inheriting characteristics from Single parent to Multiple childs
+
+5. Hybrid Inheritance: Tree of clases
+
+
+Note:
+    1. Protected Properties & Protected Member Functions will be accessed in a defined class and also in the classes of which defined class will be inherited.
+
+
+--- Reusability
+--- Heirachial Maintainance of code
+
+
+Polymorphism: 
+    having many shapes to the same functionality
+
+
+

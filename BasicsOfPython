@@ -1,0 +1,21 @@
+Basics of Python:
+
+	1. Data --- 
+		Numbers
+			INT
+			FLOAT
+		Strings
+			CHARACTERS
+
+	2. Variables & Literals
+
+		---- a = 5 --- Integer Literal
+		---- b = "Tharun Kumar" --- String Literal
+		---- c = 90.75 ---- Floating Literal
+
+
+
+1. PYTHON SHELL --- Interactive shell
+2. PYTHON SCRIPT --- Scripting
+3. IPYTHON --- Interactive Python
+4. JUpyter Notebook --- IPY

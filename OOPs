@@ -1,0 +1,116 @@
+Programming Paradigms
+
+1. Functional Programming
+2. Imperative Programming
+3. Declerative Programming
+4. Object Oriented Programming
+
+	1. Object
+	2. Class
+
+	Humans are defined by certain properties and actions
+	Birds are defined by certain properties and actions
+
+
+
+	Definition --- Class is A blueprint of a situation by defining properties and actions
+
+	Object is an instance/example of a class
+
+
+	Car can be defined as some properties 
+				--- Color
+				--- Mileage
+				--- HP
+				--- Type
+
+				actions
+				--- Start
+				--- Stop
+				--- Move
+				--- Acceleration
+
+
+	Birds can be defined as some properties
+				--- wings
+				--- color
+				--- size
+				--- feather_type
+				--- height
+				--- weight
+				--- sound_type
+
+				actions
+				--- fly
+				--- eat 
+				--- drink
+				--- walk
+				--- sleep
+				--- think
+				--- make_sound
+				--- reproduction
+
+
+	Bank --- .........
+
+
+
+
+1. Abstraction
+2. Encapsulation
+3. Inheritance
+4. Polymorphism
+	
+
+
+Creating Class --
+--- Member variables or states
+--- Member functions or member methods
+--- Constructor
+--- ACCESS SPECIFIERS
+	1. How the property will be accessed
+	2. Types
+		1. Private
+		2. Protected
+		3. Public
+
+--- Types of Properties
+	1. Class Properties --- Global Variables
+		--- You should not create instance specific properties as global properties
+	2. Instance Properties --- Specific to Instance/example will be created inside constructors.
+
+
+
+
+
+
+*****NOTE*****
+
+1. private properties --- cannot be accessed outside the class as read/write
+2. public properties --- can be accessed anywhere
+3. protected properties --- can be accessed to child class
+4. private instance properties --- for these we need to have setters and gettersfor write/read access respectively
+5. public instance propeties --- can be accessed anywhere.
+6. protected instance properties --- for these we can access (r/w) can be done in inherited classes -- child classes.
+7. class properties are common or general properties for every object /instance
+ 
+
+
+
+
+
+
+
+--- Terms
+	1. Instantiate -- objects --- creating 
+	2. Define --- int a = 10; --- a = 10
+	3. Declare -- Not in Python int a; string str; --- var=None
+
+Setters and Getters
+
+----- Private variables access or update --- member functions
+ 
+Object Creation
+Object State -- when we instantiate an object it will have all the properties and actions. this state of of object is called objects state or initial object state.
+
+self Keyword --- to refer an object inside the class

@@ -1,0 +1,44 @@
+Image ---
+    1. Color Images
+
+    Base colors --  RGB
+
+
+    R -- [0-255] -- 8Bit -
+    G -- [0-255]
+    B -- [0-255]
+
+
+    pixel == point in an image which has the output of the combination of intensities of R,G,B
+
+    pixel ==  (0,0,0)   - black pixel
+    pixel1 = (255,255,255) white pixel
+
+
+ 720 * 1024  --- (128,120,123)
+
+
+    extcolors 
+
+
+image resolutions === 256*256
+
+
+image notation --- (height,width,#channels) -- 3D
+
+2D image --- (height, width) -- black and white image -- gray image
+
+2D image (height,width, 1) -- gray image
+
+
+Image Operations:
+
+    -- sliding window
+    -- window/kernel/flilter -- 3*3 --- 5*5 --- 7*7
+    -- 
+
+
+
+(R,G,B)
+
+R ---> 0-255 --- 8bit

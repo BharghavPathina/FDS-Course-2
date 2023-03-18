@@ -1,0 +1,38 @@
+Exploratory Data Analysis & Statistics
+
+Data --- raw bytes
+Information --- Getting some insights or knowledge from Data
+Analytic Data --- From Information you will get more insights
+Predictive Data --- Patterns 
+Prescriptive Data --- Suggestions
+
+Statistics
+
+MSc Statistics --> MBA
+R Programming
+
+
+
+EDA: and/or Feature Engineering
+
+    1. Pandas Analysis
+        1. Smaller Datasets
+        2. Easy Understading
+        3. Most of the SQL Operations Supported
+        4. Experimental & Learning Purpose
+
+    2. Spark Analysis
+        1. Big Datasets
+        2. PySpark, Scala, Java, SparkSQL.
+
+
+Data:
+    1. Structural Data
+        1. Organized 
+        ---- CSV, TSV, EXCEL, RDBMS Tables
+    2. Semistructural Data
+        1. XML, JSON, CSV, MongoDB
+    3. Unstructured Data
+        1. Generating Rapidly
+
+Data Science, Machine Learning Engineers, Data Analysts, Data Engineering -- Python, Pandas, Matplotlib/seaborn, Numpy, Ydata_profiling.

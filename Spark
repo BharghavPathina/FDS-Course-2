@@ -1,0 +1,36 @@
+Distributed System
+    Computer/Node/Slave --- CPU, Memory, Harddisk
+    100 Computers 
+
+
+    Master & Slave Mode
+        Master --- maintainer
+        Slaves --- Worker Nodes/ Executors
+
+    Bigdata Cluster --- collection of masters and Slaves
+        Slave --- RAM 128GB -- 80 Cores -- 50TB
+        master --- RAM 24GB -- 12 Cores -- 5TB
+
+
+        Hadoop ---> Disk Oeprations --- Very Slow --- Java --- Map Reduce 
+        Spark ----> In Memory Process --- 10*times --- Scala, Python, --- PySpark, SparkSQL, SparkML
+
+        Spark ---> In memory Processing --- Complete Inmemory Processing
+
+    CSV --- 100TB --- Feature Engineering
+        1. Connect with Spark Cluster -- Spark-APIs, PySpark
+        2. Session --- with master
+        3. some code in pyspark --- sequential code will be digested in master
+        4. Lazy Execution --- When action triggered Execution will start
+                    Sequential code --- master tries to make it as DAG
+                    --- master has to get the 100TB --- 
+                            100TB/100 -- 1TB -- 1024GB
+                            Each slave has batching mechanism
+                                1024GB/128GB -- 8 Batches
+
+
+
+    Spark installtion --- Standalone installation
+        -- Master
+        -- Slaves 
+        ------- Processes

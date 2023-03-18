@@ -1,0 +1,5 @@
+'''
+All requirements will be here.
+Python -- 3.8.10
+
+'''

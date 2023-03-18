@@ -1,0 +1,63 @@
+Data Analysis -- EDA -- Descriptive Statistics -- Feature Engineering
+
+Structural Machine Learning:
+Insights about the data in the perspect of Statistics.
+
+Data:
+    Data Analyisis:
+        1. Graphical Analysis
+        2. Statistics
+            1. Attributes/Features/Columns/Variables
+            2. Data Distribution
+            3. Central Tendencies
+
+
+CSV -- 
+    1. Domain Knowledge
+    2. Feature Importance 
+    3. Attribute Selection 
+        1. Numerical Attributes
+        2. Categorical Attributes
+
+
+
+Feature Module: -- Given an input CSV file we have to do feature engineering 
+
+
+Features/Attribute/Columns/Variables:
+
+1. NUmerical Attributes / Quatitative Attributes
+2. Categorical Attributes / Qualitative Attributes  
+
+1. Numerical Attributes -- COntinuous Attributes 
+    Mostly important for Linear models
+    Data Distribution ---
+        Normal Distribution
+        Skewed Distribution 
+        Kurtosis Distribution
+
+        --- Continuous Distributions -- Density Graphs
+        1. Normal Distribution - Desirable
+        2. Other 2 are undesirable --- Second Opinion 
+            1. Decision -- ML Strategy
+            2. At Source Data Generation Problem fix 
+
+    Examples:   Age ---- (0-100) -- ratio-scaled Attribute
+                Temperature ---- ()
+        
+
+2. Catrgorical Variables:
+    Limited Range --- Range Categorical Threshold --- 100
+
+    Unique values in a particular column > 100 then --- Numerical Attribute / Continuous Attribute
+
+
+    1. Nominal Attribute -- Discard this --- #uniquevalues == number of rows - (1% of total number of rows)
+    2. Ordinal Attribute 
+    3. Binary Attribute -- ALl over there --- statistical forumalae
+
+
+--- Is any column has same values
+--- Is any column has zeros **********
+--- In a particular column how many null values are there
+--- One-Hot Encoding

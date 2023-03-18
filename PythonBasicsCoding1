@@ -1,0 +1,20 @@
+Python Basics Coding -- 1:
+	
+	1. Python Environments --- Virtual Environments
+	2. DataTypes -- INT, FLOAT, STRING
+		1. Implicit Casting
+	3. String Initialization
+		1. ', ", '''
+		2. string splitting
+
+	4. Functions --
+		1. Function Definition
+		2. Function Inputs - Parameters - Arguments
+		3. Function Logic -- Body
+		4. Function Outputs - Return Values
+
+	5. Finding Even Number --- without %
+	6. Hardware Implementation of Logic -- Examples ---
+	7. Complexity --- General Purpose Hardware
+		1. Time Complexity -- Time taking executing all the instructions
+		2. Space Complexity -- Space taking RAM for executing the whole task

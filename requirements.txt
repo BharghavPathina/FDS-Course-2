@@ -1,0 +1,10 @@
+#PYTHON 3.8.10
+jupyter
+numpy==1.24.1
+matplotlib
+opencv-python
+extcolors
+pyspark
+pandas
+pandas-profiling
+openpyxl

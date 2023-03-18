@@ -1,0 +1,37 @@
+NumPy ---- Numerical Python
+
+NumPy ---- Mathematical Linear Algebra & Calculus
+            1. Matrices
+            2. Differentiations
+                1. Partial Derivatives
+                2. Series 
+            3. Integrations
+
+
+Everything in Numpy deals with arrays -- numpy ndimensional arrays.
+
+NumPy Data Type --- ndarray
+Type Casting
+
+
+Defining Numpy arrays with our custom values
+    1. 0 Dimension     -- Scalar
+    2. Point Dimension -- (1,1) --- 1 Dimension
+    3. 1 - Dimension
+    4. 2 - Dimension
+    5. 3 - Dimension
+    6. n - Dimension
+
+Array is a continuous memory allocation of same type.
+
+    --- float -- 8Bytes --- 8 * 8 = 64 bits --- float64 
+
+                    ----------- float32
+                    ----------- float16
+
+    --- int ---- 4Bytes --- 4 * 8 = 32 bites --- int32
+
+Scalar & Vector
+    --- Scalars -- the data types which will be in memory default and always
+    --- Vectors -- the data types which may benefit of cpu registers & graph execution.
+
