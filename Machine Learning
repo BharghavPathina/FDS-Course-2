@@ -1,0 +1,114 @@
+Phase 1 Python --- LMS
+Phase 2 Libraries & Statistics ---- DataAnalysis
+    --- SQL
+    --- Data Science
+    --- Statistics
+        --- Testing
+Phase 3 Machine Learning ---- Model Deployment using Flask -- Docker -- AWS ECS
+    --- Supervised Machine Learning
+        --- Structural Machine Learning 
+        --- Artificial Neural Networks
+        --- Computer Vision
+        --- ML Strategies
+    --- Semi Supervised Machine Learning
+    --- Unsupervised Learning
+        --- Clustering 
+    --- Reinforcement Learning
+
+    --- Libraries:
+        Tensorflow
+        Scikit-Learn
+        Pandas, Numpy, OpenCV
+        PyTorch
+
+
+    --- Project
+        1.Linear Regression
+        2.Logistic Regression
+        3.Decision Trees
+        4. SVMs
+        4. Neural Network & Deep Neural Network
+        5. Barcode Detection
+        6. Car Damage Classification
+        7. Driver's License Detection
+
+
+Supervised ML:
+    function --- f(x) --- model
+    x -- feature
+    set features == X^
+    f(X^)
+
+
+    qualities/features ---- x1,x2,x3,......
+    answer/output ---------y
+
+    y = f(x1,x2,x3,...) --- one example
+
+
+    y^ = model = f(X^)
+
+
+    new features -- output ---?
+
+    y^ = f(X^) ---------------- Arhitectures ----- ML Strategies
+
+
+    y = f(x)
+
+
+    f(x1,x2,x3,....) = 
+
+
+    y = mx+c
+
+    m --- slope ------------- parameter/weight
+    c --- intercept --------- bias
+
+
+    y = 2x^2 + 5x + 8
+
+
+    One Linear Regression Model
+
+        parameters ---- 2,5
+        bias ---------- 8
+
+
+    y = 6x^3 + 8x^2 + 9x + 10
+
+        weights -------- 6,8,9
+        bias ----------- 10
+
+
+
+Higher order 2D space functions 
+
+    no of featues in above kind of functions --- 1
+
+
+No of features can be anything more 2, 1000
+
+    no of featuers are n--> coordinate space will be n+1
+
+
+y = m1*x1 + m2*x2 + c
+
+
+y = m1*x1 + m2*x2 + m3*x3 +.......+ mn*xn + c
+
+weights = m1,m2,m3,....mn
+bias = c
+
+
+some how -----> m1,m2,m3 values c
+
+example --- (x1,x2,x3,x4.....,xn,y)
+no of examples === 10000 --- dataset
+
+y = x1 + 2x2+ 6x3 -7x4 -8x5 + ..... -20
+
+
+new question --- features (x1,x2, .... xn)
+
+y output --------> prediction from the mdoel / inferencing
