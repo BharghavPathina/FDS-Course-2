@@ -1,0 +1,75 @@
+Structural Data:
+
+Problem: 
+    -- Ecommerse customer spent Analysis
+    -- prediction Problem: Set of Features ---> Predicting something
+
+    -- Linear Regression
+        If Structural Data is Linear Data
+        -- To Build a ML model ---> f(X) -- where X - set of all features X = {x1,x2,x3,....xn}
+            f(X) will be linear line/hyper line
+
+      -- Advantages: 
+        1. Time Series Analysis
+        2. Stock Market -- Reinforcement
+        3. Forecasting/prediction
+        4. Easy to implement
+        5. Easy to inferencing
+        6. Historical Data--->
+
+    y = f(x) = mx+c
+
+
+    Y = F(X)
+
+
+    Xi = {x1,x2,x3,x4,....xn}
+
+    ith example in dataset
+    #features/#columns/#attributes = n
+    #examples/#instances/#rows/#fields = m
+
+
+    X0 ---> 1st example
+    X0 ---> [x0,x1,x2,x3,.....,xn]
+
+    shape X0 = (n,1)
+
+    shape X = [X0,X1,X2,....Xm] 
+        -----> n*m --- if we stack examples in vertical 
+        -----> m*n --- if we stack example in horizontal
+
+
+    y ---> scalar -- single number
+    Y ===> m examples---> (y0,y1,y2,....ym) 
+
+    shape Y = (m,1)
+
+    
+
+    Y = F(X) = P1 * X1 + P2 * X2 + ....... + Pm * Xm
+
+    Y = F(X) = P1 * [x0,x1,x2,...xn] + P2 * [x0,x1....xn].....
+
+    (m,1) -----> P(1,m) * X(m,1)
+
+    Weights--->
+
+
+                ---->  (1,n) * (n,m) + (1,m)
+                    ==  (1,m) + (1,m)
+                   y == (1,m)
+
+
+    Y(1,m) = W(1,n) * X(n,m) + B(1,m)
+
+
+    Y = WX + B
+
+    Y(1,m) = W(n,1).T * X(n,m) + B(1,m)
+
+    Y = W.T * X + B
+
+
+
+    

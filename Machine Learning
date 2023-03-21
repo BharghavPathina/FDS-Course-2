@@ -112,3 +112,14 @@ y = x1 + 2x2+ 6x3 -7x4 -8x5 + ..... -20
 new question --- features (x1,x2, .... xn)
 
 y output --------> prediction from the mdoel / inferencing
+
+
+Supervised Machine Learning: We will need to give labelled data to train models to get the function
+    --- Labelling Tools: Open source tools and commerical tools
+    1. Structural Machine Learning
+    2. Computer Vision
+    3. Text Analysis
+    4. Natuaral Language Processing
+Unsupervised ML: We will data only, the techniques will try to find out the patterns out of it. -- cluster
+Semi Supervised ML: You have labelled data and unlaballed data. you use labelled data to label the unlaballed data.
+Reinforcement ML: It works on penalty/bounty
