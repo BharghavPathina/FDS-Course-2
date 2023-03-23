@@ -44,6 +44,7 @@ Problem:
     Y ===> m examples---> (y0,y1,y2,....ym) 
 
     shape Y = (m,1)
+          Y = (1,m)
 
     
 
@@ -51,7 +52,6 @@ Problem:
 
     Y = F(X) = P1 * [x0,x1,x2,...xn] + P2 * [x0,x1....xn].....
 
-    (m,1) -----> P(1,m) * X(m,1)
 
     Weights--->
 
@@ -72,4 +72,128 @@ Problem:
 
 
 
-    
+
+    W * X = [(w1*x00+w2*x01+w3*x02+w4*x03),(w1*x10+w2*x11+w3*x12+w4*x13),
+            (w1*x20+w2*x21+w3*x22+w4*x23),(w1*x30+w2*x31+w3*x32*w4*x33)]
+
+    shape of W * X --->(1,4) ---> (1,m) --- m #examples
+
+
+    W * X = [([w1,w2,w3,w4] * [x00,x01,x02,x03]), ([w1,w2,w3,w4] * [x10,x11,x12,x13])
+            ([w1,w2,w3,w4] * [x20,x21,x22,x23]), ([w1,w2,w3,w4] * [x30,x31,x32,x33])]
+
+    W * X --> [W] * [X]
+             [W] --> (1,4)
+             [X] --> (4,1)
+              --> (1,1)
+
+    W * X --> 
+
+        W = [w1,w2,w3,w4]
+
+        X = [x0,x1,x2,x3]
+
+        x0 = [x00,x01,x02,x03]
+        x1 = [x10,x11,x12,x13]
+
+
+    W * X = [(W * x0), (W*x1), (W*x2), (W*x3)]
+
+    W * X = [W * [x0,x1,x2,x3]]
+
+        ---> (1,n) * (n,m)
+
+    W * X ----> [W * X]
+
+
+    Y = W*X + B
+
+            W*X ---> (1,m)
+            B -----> 6 ->>> ([1,m])
+
+
+
+    question --> I have a dataset with 15 features and 10200 examples then what will be my Weights shape in linear regression or single nueron?
+
+    W ---> (1,15) --- (1,n)
+    X ----> (15,10200) -- (n,m)
+    B ----> (1, 10200) ---> (1,m) B value is a scalar -->  Scalar (10) will be broadcasted to the shape of (1,10200) & Vectorization
+
+
+
+
+Numpy()
+
+
+ ------>a = np.array([1,2,3,4])
+        a.shape ---> (4,) --> (4,1) --> (n,1)
+
+
+        Y = W.T * X +B
+
+        Y = np.dot(W.T,X) + B = F(X) -- Model
+
+
+Y = np.dot(W.T,X) + B
+
+Y ---> labels of m examples
+X ---> features of m examples
+
+
+Dataset---
+
+X0 -- [1,2,3,4] -------------- 18' -- y
+X1 -- [2,21,14,5] ------------ 42' -- y
+.
+.
+.
+.
+.
+.
+X1000 [0,1,0,0] --------------- 5' -- Y
+
+
+
+Y = F(X)
+
+
+f(x) = 2x^2 + 3x -10
+-- Convex functions
+
+----> Every Convex function will get a global minima
+----> If you have n features ----> you will end up with n+1 dimesions
+----> On top of n+1 dimesions you will be having a convex function always for linear regression
+----> If any function is convex function then we will get global minima of it.
+----> We are going to find that global minima of the function with the help of technique called Gradient Descent
+----> gradient ---> slope ----> f(x) ---> d(f(x))/dx ---> 
+                                ----> many parameters (W,B) ---> F(W,B) ---> dow(F(W,B))/d(W)---> slope of F(W,B) w.r.t W --- B will be constant       
+                                                                        ---> dow(F(W,B))/d(b) ---> slope of F(W,B) w.r.t B --- W will be constant
+
+
+----> You can achieve 100% accuracy with traindata
+
+
+F(2) = 8 + 6 -10
+F(2) = 4
+
+
+F(X) =  Y = W.T * X + B
+
+
+
+
+Particular combination of W,B will be a model ---> 
+
+
+
+
+
+parameters ---> W, B ---> Weights, Biases
+
+
+
+
+
+
+
+XNew == [20,0,20,0] ----------> F(X)
