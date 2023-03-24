@@ -1,0 +1,84 @@
+Number of examples #examples = m
+Number of features #features = n
+One example X(i) - ith example = [x0,x1,x2,x3,....xn]
+m examples = [X0,X1,X2,X3,......Xm]
+labels (Y)=     [y0,y1,y2,y3,......ym] --- ground truth
+Weights =    [w1,w2,w3,.........wn]
+Bias   =     b
+
+Linear Regressor/Model/Function --- Y^ = np.dot(W.T,X) + b
+                                    Y = W.X + b
+
+Y Actual ----- From the training dataset
+Y Pred ------- Predicted Y value from the Function
+
+
+abs(Y(pred) - Y(actual))
+
+Probability ----> Function Space---> Hypothesis Space H ----> Which is the best function 
+
+Measure of the Linear Regressor will be loss Function/ Cost Function / Error function:
+
+J = 1/2(Sigma(1,m)(abs(Y(pred)(i) - Y(actual)(i)))^2)
+
+J = 1/2(abs(Y(pred) - Y(actual))^2) 
+
+J = 1/2(abs(W*X+b) - Y(actual))^2
+
+What are the variables ? --- W,b
+What are the fixed values? --- X,Y(Actual)
+
+J(W,b) = 1/2(abs((W*X+b)-Y(actual)))^2
+
+J(W,b) is also a convex function
+
+----> You will lowest or global minima of the Cost function
+
+----> For what values of W,b you will get global minima or lowest possible value of the cost function J(W,b)
+
+
+## Number of parameters in Linear Regression = n+1
+
+Gradient Descent Algorithm:
+
+J(W,b) = 1/2((W*X+b)-Y(actual))^2
+
+
+If a function has only one variable then we will do normal differential to the gradient or slope
+
+If a function has more than one variable then we will do partial differentians to get the gradient of the function wr.t particular variable
+
+Gradiant of J(w,b) w.r.t W === dow(J(W,b))/d(W)
+Gradiant of J(W,b) w.r.t b === dow(J(W,b))/d(b)
+
+Slope of the J(W,b) w.r.t W will tell W the direction of minimum of the cost function (J(W,b))
+Slope of the J(W,b) w.r.t b will tell b the direction of minima of the cost function (J(W,b))
+
+W = W - alpha(slope(J(W,b) w.r.t W))
+b = b - alpha(slope(J(W,b) w.r.t b))
+
+learning rate ---> alpha
+
+Gradient Descent Algorithm -- Basic
+Training Phase:
+1. Random initilization of W,b
+2. find out the cost function --> Training dataset ---> (Ypred - Yactual)
+3. slope of that function w.r.t both
+---> Until you get the minima---> (W,b) are not changing ---> Converging 
+4. Update W,b:
+    W = W - alpha*(slope(J(W,b)) w.r.t W)
+    b = b - alpha*(slope(J(w,b)) w.r.t b)
+
+W,b ---> Y = W*X + b
+
+*** Converging will be happen w.r.t the parameters if the function is convex function.
+
+slope(J(W,b)) w.r.t W ==> dow(J(W,b))/dW
+
+                     ===> dow(1/2(Y^ - Y)^2)/dW
+                     ===> dow(1/2(W.X + b - Y)^2)/dW
+                     
+
+slope(J(W,b)) w.r.t W = (Y^-Y)*X
+
+slope(J(W,b)) w.r.t b = (Y^-Y)
