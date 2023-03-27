@@ -1,0 +1,53 @@
+Linear Regression:
+    --> Structural Data
+    --> X and Y
+    --> X refers to Examples or Rows or Fields 1000 above X = [X0,X1,X2...,Xm]
+    --> Each X is a combination of features X(i) = [x0,x1,x2,x3,....xn]
+    --> Labels are Y
+    --> For each example we have one label 
+    --> Y = [y0,y1,y2,y3,....ym]
+    --> X(i),Y(i) = ([x0,x1,x2,...,xn],y(i))
+
+    --> Linear Regressor/Linear Line/Linear Model/Linear Function = Y^ = W*X + b / Y^ = W.T * X + b / Y^ = np.dot(W.T,X)+b
+    --> parameters are W,b
+    --> Number of parameters in Linear Regressor = n+1
+
+    --> Linear Regressor will be in a Hypothesis Space where there will be infinite number of possibilities of linear regressors 
+    --> Cost/Loss Function as metric to find the best line among the Hypothesis space.
+
+    --> J(W,b) = Sigma(0,m)[Y^(i)-Y(i)]^2/2 --- Mean Squared Error
+
+    --> To find best values of W,b we have Gradient Descent Method
+    --> J(W,b) must should be converged or convex Function
+
+    STEPS:
+        1. Initialize randomly W,b ---> Y^ = W.T * X + b
+        2. Each example X(i) ==> Y^(i) = W.T * X(i) + b
+        3. Cost function J(W,b)
+        4. Finding Next W,b
+            --> W(Next) = W(Previous) - (alpha) (Slope of J(W,b) w.r.t W)
+                W(Next) = W(Previous) - (alpha) (Sigma(0,m)[Y^(i)-Y(i)] * X(i))
+            --> b(Next) = b(Previous) - (alpha) (Sigma(0,m)[Y^(i)-Y(i)]) * 1
+        5. Repeat from 2 step until W,b are not changing ---> W(Previous) == W(Next) for 10 repetitions --> # Iterations--> epochs
+        6. Return W,b
+
+    
+    Inference will be accurate --->
+    Y^ = W.T * X + b
+
+    Test dataset XTest 
+    Ypred - Y^
+    YTest - Yactual
+
+One of the metric that can tell us abot the Loss
+
+    (Y^-Ytest) --- erro/Loss
+    (Y^-Ytest)^2/2 --- mean squared error 
+
+
+
+Linear Regression ---> Its very prone to Outliers, unrelated data and dependent features/attributes/columns
+
+
+
+requirements.txt --> scikit-learn
