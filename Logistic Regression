@@ -1,0 +1,113 @@
+ML Predictions:
+    1. Regression  ----------------> The Output of the Prediction is continuous value/number
+    2. Classification -------------> The Output of the Prediction is discrete value/
+
+
+Logistic Regression: Its a Classification problem
+    ---> 2 classes/categories---> Binary Classification problem
+    ---> more than 2 classes/categories---> Multi label classification problem
+
+
+Linear Regression --> Single Neuron without activation
+Logistic Regression --> Single Neuron with activation ---> Perceptron
+
+y = mx+c
+
+X --> [X0,X1,X2,...Xm] -- #examples = m
+X(i) --> [x0,x1,x2,.....xn] -- #features = n
+
+Y^ = np.dot(W.T,X) + b
+Y^ = W.T * X + b
+
+Shape of W ---> (1,n)
+Shape of b ---> Scalar value
+total number of parameters = n+1
+Coordinate space dimensions = n+1
+
+Classification problem ---> Binary Classification
+
+Tranforming the Linear Regressor (Y^ = W.T * X + b) to a function which specifies (0,1)
+
+Y^  =  W.T * X + b
+
+One Tranforming function called Sigmoid Function ---> Activation function 
+
+Sigmoid Function F(X) = 1/1+exp(-x)
+
+x===> +inf
+
+exp(-x) = 1/exp(x)
+        = 1/exp(inf)
+
+        Limit x>inf 1/x = 0
+
+        = 0
+F(X) = 1/1+0 = 1
+
+x ===> -inf
+
+exp(-x) = exp(-(-inf)) = exp(inf) ==large
+
+F(X) = 1/1+large
+     = 1/large
+
+     = 0
+
+Z = W.T * X + b
+
+Y^ = Sigmoid(Z) = 1/1+exp(-Z) = 1/1+exp(-(W.T*X+b)) -- Logistic Regression
+
+Y^ = Sigmoid(np.dot(W.T,X)+b)
+
+Y^ = 1/1+exp(-(W.T*X+b))
+
+Y^ = 1/1+exp(-Z)
+
+
+Loss/Cost Function ---> Sigma(1,m)(Y^(i)-Y(i))^2/2 -- (Mean Squared Error)
+
+-----------------------> Sigma(1,m)(Sigmoid((W.T*X(i)+b)),Y(i))^2/2
+
+    --------------------> We wont get convex function --> Not applicable for Gradient Descent
+
+    -----------------> Loss Function (Log Loss) ---> J(W,b) = i overs from 1,m: -(Y(i)log(Y^(i))+(1-Y(i))log(1-Y^(i))) is a convex function
+
+                    -----> Y^ --- (0,1) --> Threshold ---> Y^ is more than 0.8 then Y^ is 1 else 0
+
+                    -----> Actual Y ---> 1
+
+                    J(W,b) = -(YlogY^)
+                    J(W,b) = -(logY^)
+                    J(W,b) = -(logY^) ---> Never becomes 0
+
+                    J(W,b) = -log(Y^) ---> Y^ tends to 0
+
+                    limit Y^->0 will give me J(W,b) = -(log(Y^)) = 0
+
+                    --- Negative example ===========> -(-inf) = large number---> 
+
+
+                    -----> Actual Y ---> 0
+
+                    J(w,b) = -((1-Y)log(1-Y^))
+                    J(W,b) = -(log(1-Y^))
+
+                    J(W,b) ---> 0 (minimal loss)
+
+                    (1-Y^) ----> 1
+                    Y^ ------> 0
+                    --- Negative example ===========> -(log(1-Y^)) = -(log(0)) ==> large number
+
+                    Lmt x->0 log(x) == -inf
+
+
+    ---------------------> We can apply gradient descent --> best minimum possible values for W, b so that the loss will low..
+
+
+
+
+
+
+
+
+
