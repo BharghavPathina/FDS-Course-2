@@ -104,6 +104,79 @@ Loss/Cost Function ---> Sigma(1,m)(Y^(i)-Y(i))^2/2 -- (Mean Squared Error)
     ---------------------> We can apply gradient descent --> best minimum possible values for W, b so that the loss will low..
 
 
+    Cost Function = J(W,b) = L = -(ylog(y^)+(1-y)log(1-y^))
+
+    Z = W.T * X + b
+    A = Y^ = Sigmoid(Z) = 1/1+exp(-Z)
+    L(A,Y) = -(Y(log(A)+(1-Y)log(1-A)))
+
+Gradient Descent Algorithm -- Basic
+Training Phase:
+1. Random initilization of W,b
+2. find out the cost function --> Training dataset ---> (Ypred - Yactual)
+3. slope of that function w.r.t both
+---> Until you get the minima---> (W,b) are not changing ---> Converging 
+4. Update W,b:
+    W(Next) = W(Prev) - alpha*(slope(J(W,b)) w.r.t W)
+    b(Next) = b(Prev) - alpha*(slope(J(w,b)) w.r.t b)
+
+
+
+slope of L(A,Y) w.r.t W --->
+slope of L(A,Y) w.r.t b --->
+
+
+
+Forward Propagation:
+
+BackPropagation in Gradient Descent:
+    ---> Finding derivativs of L(A,Y) wr.t W,b
+
+    Derivative of L w.r.t A =  dA = P(L(A,Y))/dA 
+    Derivating of L wr.t Z = dZ = P(L(A,Y))/dZ = P(L(A,Y))/dA * P(A)/dZ = dA * P(A)/dZ
+    Derivative of L w.r.t W1 = dW1 = P(L(A,Y))/dW1 = dZ * P(Z)/dW1
+    Derivative of L w.r.t W2 = dW2 = P(L(A,Y))/dW2 = dZ * P(Z)/dW2
+    Derivative of L w.r.t b = db = P(L(A,Y))/db = dZ * P(Z)/db
+
+
+    dA = P(L(A,Y))/dA = P(-(Ylog(A)+(1-Y)log(1-A)))/dA
+
+                        = -(Y * 1/A + (1-Y)1/(1-A)(-))
+                        = -(Y/A - (1-Y)/(1-A))
+
+    
+    dZ = dA * P(A)/dZ
+
+    P(A)/dZ = P(Sigmoid(Z))/dZ
+            = P(1/1+exp(-z))/dZ
+            = A(1-A)
+
+    dZ = -(Y/A -(1-Y)/(1-A)) * A(1-A)
+        = A-Y
+
+
+    dW1 = dZ * P(Z)/dW1
+
+    P(Z)/dW1 = P(W1X1+W2X2+b)/dW1
+             = X1
+
+    dW1 = (A-Y) * X1
+    dW2 = (A-Y) * X2
+    db = (A-Y) * 1
+
+
+    alpha = 0.01
+
+    W1Next = WPrev -(alpha)dW1
+    W2Next = W2Prev -(alpga)dW2
+    bNext = bPrev - (alpha)db
+
+
+    
+
+
+
+
 
 
 
