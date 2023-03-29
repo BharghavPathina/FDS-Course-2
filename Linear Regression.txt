@@ -82,3 +82,33 @@ slope(J(W,b)) w.r.t W ==> dow(J(W,b))/dW
 slope(J(W,b)) w.r.t W = (Y^-Y)*X
 
 slope(J(W,b)) w.r.t b = (Y^-Y)
+
+
+
+**** Linear & Logistic Regressions work for linear data
+
+**** Linear & Logistic Regressions work for non-linear data as well in different dimensions
+
+    ---> Seperable---> Classifier--> Logistic Regression
+        ---> If out data is linearly Seperable then we can use Logistic Regression
+        ---> If our data is not linearly Seperable in lower dimensions then it may be linearly Seperable in higher dimensions
+            ----> dimensions ---> features
+            ----> X --> f1,f2,f3,f4
+            ----> X is not linearly Seperable then we can have some more featrues like
+                ---> Extension--> SVMs
+                ---> X --> f1,f2,f3,f4, f1f2, f1f2f3,sqrt(f1) -- bruteforce
+                
+    ---> feature Scaling or Normalization
+
+        ----> Values of features are large numbers
+        ----> Cost function --> Loss will also be higher ---> Lower cost--->more training time
+        ----> Normalize you features ---> cost function will normal ----> training time will be optimal
+            ----> Normalization is 
+                    --> f1 ---> [......] -- continuous numerical data
+                    ---> f1 = f1/norm(f1)
+                    ---> norm f1 = sqrt(f1[0]^2+f1[1]^2+....f1[m]^2)
+                    ---> Z - Normalization - L2 Normalization
+
+
+        
+            
