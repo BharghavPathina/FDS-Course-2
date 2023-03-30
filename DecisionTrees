@@ -1,0 +1,89 @@
+Decision Tree: Binary Tree
+
+Root Node: Starting node (parent) node
+Children Nodes: Branches from Root Node ---> Atmost 2 childrens
+
+Depth Of the tree: No of branches in longest branch of the tree
+Height of the tree: No of nodes in longest branch of the tree
+
+
+Dataset ---> Binary Classified data
+Classes ----> C1,C2 --- f6=label
+Features: --> f1,f2,f3,f4,f5.
+
+Example/Data point --> 
+
+Assumptions ---> f1,f2,f3,f4,f5 all are binary attributes.
+
+f1---> values ----> 2 categories ---
+feature vector/data point/example --> X0 = (f1,f2,f3,f4,f5) Y0 = f6
+
+f6 is binary attribute --> c1 and c2
+
+number of total examples = m
+
+Take f1 ---> 
+
+
+Decision Tree Pseudo code:
+    1--> Start with all examples/datapoints/feature vectors at main root node
+    2--> Mathematical Caluclation ---> input ---> all examples, f1,f2,f3,...,fn --> fi
+    3--> Split the datapoints based on the feature (fi) values ---> 2 values --> left branch examples, right branch examples
+    4--> Repeat from 2 step by giving splitted data points and remaining features as inputs 
+        --> 1 class at one branch then ---> Leaf node ---> (need not repeat 2 step)
+        --> Decision Tree Depth will --> Threshold
+
+---> Information Gain 
+    I(f(i)) = H(root)(P1) - (W(left)*H(left)P1 + W(right)*H(right)P1) 
+
+    P1 -- Probability of class 1 of examples
+
+    6 examples ---> 3 examples c1 & 3 examples c2 ---> 3/6 = 1/2 = 0.5
+    6 examples ---> 5 exampels c1 & 1 examples c2 ---> P1 = 5/6 =
+    P1 ---> [0,1]
+
+    P1 + P2 = 1
+    P2 = 1-P1
+    Entropy -- H(P1) = -P1logP1 - P2logP2
+               H(P1) = -(P1logP1 + (1-P1)log(1-P1))
+
+
+    f1,f2,f3,f4,f5 and X0,X1,X2,X3,X4,X5
+
+    Information gain of all features w.r.t the given data points --> max of infromationtion of feature ---> feature will be returned.
+
+    before spplit -- root -- {X0,X1,X2,X3,X4,X5}
+
+    f1 ===> left = {X1,X3,X5} and right = {X0,X2,X4}
+
+    H(root)(P1) = -(P1logP1 + (1-P1)log(1-P1))
+            P1  = 3/6 = 1/2
+
+    H(left)(P1) = 
+            P1 = 2/3
+
+    H(right)(P1) = 
+            P1 = 1/3
+
+    W(left) = 3/6
+    W(right) = 3/6
+
+    will repeat samething for all features --> 
+
+
+
+    1st split
+
+    before split root = {X0,X1,X2,X3,X4,X5}
+
+    f(i) = left == {X0} and right == {X1,X2,X3,X4,X5}
+
+    root(P1) = Probability of Class 1 of root set = #examples with class c1/total number of examples 
+    left(P1) = Probability of class 1 of left set = #examples with class c1/total number of examples = 0/1 = 0--> 1/1 = 1
+    right(P1) = Probability of class 1 of right set = #examples with class c1/total number of examples
+
+    Assume in right set --> there are 3 examples are belonging class 2 then right(P1) = 2/5
+
+    W(left) =  1/6
+    W(right) = 5/6
+
