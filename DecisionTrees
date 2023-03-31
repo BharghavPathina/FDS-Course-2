@@ -32,6 +32,8 @@ Decision Tree Pseudo code:
     4--> Repeat from 2 step by giving splitted data points and remaining features as inputs 
         --> 1 class at one branch then ---> Leaf node ---> (need not repeat 2 step)
         --> Decision Tree Depth will --> Threshold
+        --> Information Gain at below some threshold 
+        --> #examples at node below some threshold
 
 ---> Information Gain 
     I(f(i)) = H(root)(P1) - (W(left)*H(left)P1 + W(right)*H(right)P1) 
@@ -87,3 +89,34 @@ Decision Tree Pseudo code:
     W(left) =  1/6
     W(right) = 5/6
 
+
+Decision Tree is highly prone to single data point ---> 
+
+Enseble Methods: --- Grouping
+
+1. Random Forest:
+        --> bagging method
+        no of examples  = m = 100
+        no of features = n
+        take some sample (25) out of m examples --> then train a Decsion Tree --- estimator1
+        take one more sample out of m examples
+                ---> Sampling data points with replacement
+        estiamators --- 100
+        X^ --> 100 Desion Trees-->
+                X^ belongs to C1 ---> 78
+                X^ belongs to C2 ---> 22
+                ---> C1
+        
+        More robusting in compare to single decsion tree 
+
+2. XgBoost:Gradient Boosting
+        --> Boosting method
+        take some random sample (p) out of m examples ---> train a decsion tree ---> estiamator1
+        ---> p examples --> Decision tree --> misclassify examples---> give the more probability to those examples
+                which are misclassified
+        --> next saample we have to take the sample out of m examples and giving more probability to the examples which
+                are misclassified in previous decsion tree
+
+
+One Hot Encoding -->
+        Check diagrams
