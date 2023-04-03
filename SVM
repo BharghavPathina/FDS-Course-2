@@ -1,0 +1,124 @@
+Support Vector Machines
+
+SVM -- Classification ML Model
+
+Logistic Regression ---> Z = W.T * X + b
+
+                    ---> G(Z) = 1/1+exp(-Z) 
+
+                
+
+            W.T * X + b > 0 ---> Positive side of the Classification
+
+
+            Sigmoid ---> to get the classes ---> Z = W.T * X + b
+
+            ---> Z > 0 ---> Positive Region ---> C1
+            ---> Z < 0 ---> Negative Region ---> C2
+
+        
+        C1, C2 ===> 0,1 ---> +1, -1
+
+        C1 = positive example = +1
+        C2 = negative example = -1
+
+        (W.T * X(i) + b) 
+
+
+        Y(i) * (W.T * X(i) + b)  positive---> when you have negative example
+        Y(i) * (W.T * X(i) + b)  positive       ---> When you have positive example
+
+
+        Y(i) * (W.T + X(i) + b) > 0 ----> functional margin
+
+
+        The red line the graph ---> highly bias to circle examples 
+
+
+        example / datapoint ---> feature vector --> vector
+        SVM --> The distance between the nearest vector from the classifier line/plane/hyperplane should be more or nominal
+
+
+        Optimization Algorithms ---> Minimizing Problems ---> 0
+                                ---> Maximizing Problems ---> inf
+        Linear and Logistic Regressions -->  Minimizing Problem
+
+        SVM ---> Maximizing the margin between nearest vectors of the hyperplane
+
+
+        Nearest Vectors ---> Support vectors
+
+
+        ---> Decision boundary(hyperplane) of the SVM depends on Support Vectors
+
+        ---> Decision boundary(hyperplane) of the SVM ---> should have nominal margin between support vectors of positive side and negative side
+
+        ---> SVM expects variables that are linearly seperable ---> f1,f2,f3 ---> f1f2,f1f3,sqrt(f1) ---> 
+
+        -----> If you have lower dimensional space and the data points are non-linearly seperable then in higher dimensional
+        space these same data points may be linearly seperable...
+
+        -----> L(W,b) = 1/2(W.T*W) - Sigma(alpha(i)[y(i)(W.T*X(i)+b)])-1 --- Legranzian Multiplier
+
+        ------ alpha --> Legranzian
+
+        -----> L(w,b) should be maximized with some alpha values---
+
+        -----> Even little noise to the data points may be misclassified in case of the classifies is biased towards any of the one class
+
+        ----> Datapoints --> in realtime are always unexpectable
+
+
+
+
+        -------------> Distance between Hyperplane and a datapoint ---> functional margin ---> y(i)(W.T*X(i)+b)
+
+        -------------> y(i)(W.T*X + b)/L2Norm(W) >= lambda 
+
+        Y(i)(W.T*X(i) + b) = lambda ---> X(i) = Support Vector
+
+
+                a/b maximizes  ---> maximize a and minimize b
+
+
+                minimize 1/2 * L2Norm(W) --- equ 1
+                maximize Y(i)(W.T*X + b) --- equ 2
+
+
+            
+            pi(L2Norm(W)) == 1/2 W.T * W
+
+
+
+            ---> L(W,b) = 1/2(W.T*W) - Sigma(alpha(i)(y(i)(W.T*X(i)+b)-1))
+
+
+            ---> L(W,b) w.r.t W ===> W - Sigma(alpha(i)y(i)(W.T*x(i))) - Sigma(alpha(i)y(i)b) + Sigma(alpha(i)) i overs from i=1 to m where m is number of examples
+                                 ===> W - Sigma(alpha(i)y(i)x(i))
+
+            ---> L(W,b) w.r.t b ====> -Sigma(alpha(i)y(i)) 
+
+
+            ----->  W - Sigma(alpha(i)y(i)X(i)) = 0
+
+
+
+                    -> Sigma(alpha(i)y(i)x(i)) = W
+                    -> Sigma(alpha(i)y(i)) = 0
+
+
+
+            L(W,b) = 1/2(Sigma(alpha(i)y(i)x(i)).Sigma(alpha(j)y(ix(i)))) - Sigma(alpha(i)y(i)x(i)).Sigma(alpha(j)y(j)x(j)) + Sigma(alpha(i)) ---> i,j overs from 1 to m
+
+
+
+            L(W,b) = Sigma(alpha(i)) - 1/2 (Sigma(alpha(i)y(i)x(i)))
+
+                given alpha>=0 and Sigma(alpha(i)y(i)) = 0
+
+
+            you have to find particular alpha values to maximize L(W,b)
+
+
+
+            Inference ==> Sigma(alpha(i)y(i)x(i)X^ + b)

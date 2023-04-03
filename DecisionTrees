@@ -35,7 +35,7 @@ Decision Tree Pseudo code:
         --> Information Gain at below some threshold 
         --> #examples at node below some threshold
 
----> Information Gain 
+---> Information Gain for Classification
     I(f(i)) = H(root)(P1) - (W(left)*H(left)P1 + W(right)*H(right)P1) 
 
     P1 -- Probability of class 1 of examples
@@ -120,3 +120,22 @@ Enseble Methods: --- Grouping
 
 One Hot Encoding -->
         Check diagrams
+
+
+Decision Tree for Regression Problem:
+        ---> Y label/attribute/column is a continuous numerical attribute
+        ---> 
+
+        Information Gain : Variance(Root) - [W(left)Variance(left)+W(right)Variance(right)]
+
+        Variance = sqrt(standard deviation)
+        
+        --- Variance of a attribute is --> how the data/values in an attribute are dispered
+
+
+        ---> 1. Start with all examples
+        ---> 2. get the feature from Information Gain--> (all features,examples)
+                for feature in all_features:
+                        infromationgain.append(infgain(feature))
+                return infromationgain.max()
+                
