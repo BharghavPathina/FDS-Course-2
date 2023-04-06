@@ -1,0 +1,180 @@
+Neural Network ---> 
+
+Input Layer ==> #features = #nodes
+
+We are generalizing the problem ---> m examples
+
+Y = W.T * X + b
+Input Layer Shape ==> (n,m)
+
+Hidden Layer 1 ===> #Nodes == variable ---> we can update
+
+    Every Node will have Z and A
+        Z = W.T * X + b
+
+        X == Outputs of the previous Layer
+
+
+    Z^L = Array of Z functions (W.T * A^L-1 + b) of each node of layer L
+
+    A^L = Array of Activations of Z functions of each node of Layer L
+
+        A^L = Activation(Z^L)
+
+        Z1(0) ==> 1st layer 0th node
+
+        Z1(0) = W1(0).T * A0 + b1(0)
+        Z1(1) = W1(1).T * A0 + b1(1)
+        Z1(2) = W1(2).T * A0 + b1(2)
+        Z1(3) = W1(3).T * A0 + b1(3)
+
+
+    A0 == X == (n,m)
+    W1(0) ====> (n,) -- W1(0).T ==> (1,n) 
+    W1(0).T * A0 ---> (1,m)
+    b1(0) ====> (1,m)
+
+    W1(1) ====> (n,) --W1(0).T ===> (1,n)
+    b1(1) ====> (1,m)
+        
+    #L = Number of nodes in Layer L
+
+    W1----> all the nodes will have same shape ===> (1,n)
+    b1 ---> all the nodes will have same shape ===> (1,m)
+
+    W1 = [W1(0),W1(1),W1(2),W1(3)] --> (4,n)
+
+    Whole shape of W1 = 
+    
+    W1 = (#1,#0)
+
+    W^L = (#L,#L-1) 
+
+    b1 = (#1,m)
+
+    b^L = (#L,m)
+
+
+
+
+
+
+Forward Propagation of Neural Network:
+
+
+----> Input Layer => (n,m) #0 = n and number of examples = m
+
+----> Hidden Layer 1 Output = Z1 = W1.T * A0 + b1 --- numpy 
+                              A1 = Activation(Z1)
+
+----> Hidden Layer 2 Output = Z2 = W2.T * A1 + b2 ---
+                              A2 = Activation(Z2)
+
+----> Output Layer (3rd layer) = Z3 = W3.T * A2 + b3
+                                 A3 = Y^ = Activation(Z3)
+
+
+
+
+
+Backward Propagation:
+
+                Predicted Y^
+                Actual    Y
+
+                Loss between Predicted and Actual
+
+                Loss functions ---> mse,logloss, other loss functions 
+
+
+----> We will calaculate loss function w.r.t (Y^,Y) ---> (Activation(Z3),Y)
+                                                    ---> (Activation(W3.T * A2 +b3),Y)  
+
+
+
+    Loss function J(W,b) ===> P(J(w,b))/dW --> P(J(W,b))/db
+
+
+            ----> J(W,b) ===> P(J(W,b))/dW3 --> W3 gradient
+
+            -----> J(W,b) ===> P(J(W,b))/db3 ---> b3 gradient
+
+
+                                                --- W2 gradient
+                                                --- b2 gradient
+
+
+                                                --- W1 gradient
+                                                --- b1 gradient
+
+
+Gradient Descent Algorithm:
+
+        W1(new) = W1 - alpha(Gradient of W1)
+        b1 = b1 - alpha(Gradient of b1)
+
+        W2 = W2 - alpha(Gradient of W2)
+        b2 = b2 - alpha(Gradient of b2)
+
+        W3 = W3 - alpha(Gradient of W3)
+        b3 = b3 - alpha(Gradient of b3)
+
+
+Till W1,W2,W3, b1,b2,b3 are converges.
+
+
+
+
+
+My Input is (64*64) ==> 4096 image of 1024 images. then I have 12 nodes of hidden layer 1, 
+18 nodes of hidden layer 2, 6 nodes of hidden layer 3
+2 nodes of hidden layer 4, 1 node of output layer?
+
+
+Draw Network?
+
+Number of whole parameters ---> 
+
+input layer == (4096,1024)
+
+hiddenlayer 1 shape of W, b, Z, A ===
+        W1 shape = (12,4096)
+        b1 shape = (12,1024)
+        Z1 shape = (12,1024)
+        A1 shape = (12,1024)
+
+# parameters in hidden layer 1 ==> (12*4096) + (12*1024)
+
+hiddenlayer 2 shape of W,b,Z,A ===
+        W2 shape = (18,12)
+        b2 shape = (18,1024)
+        Z2 shape = (18,1024)
+        A2 shape = (18,1024)
+
+# parameters in hidden layer 2 ==> (18*12) + (18*1024)
+
+hiddenlayer 3 shape of W,b, Z, A ===
+        W3 shape = (6,18)
+        b3 shape = (6,1024)
+        Z3 shape = (6,1024)
+        A3 shape = (6,1024)
+
+hiddenlayer 4 shape ===
+        W4 shape = (2,6)
+        b4 shape = (2,1024)
+        Z4 shape = (2,1024)
+        A4 shape = (2,1024)
+
+outputlayer shape ===
+        W5 shape = (1,2)
+        b5 shape = (1,1024)
+        Z5 shape = (1,1024)
+        A5 shape = (1,1024) 
+
+
+
+A3 = Y^ -- (1,1024)
+
+Y ---------(1,1024)
+
+
