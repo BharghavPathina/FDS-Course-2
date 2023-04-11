@@ -1,0 +1,84 @@
+Machine Learning Model
+
+
+Supervised Machine Learning ----> input and output
+
+-----> Algorithm ---> Which kind of data/purpose and realtime/batch inferencing ---> Choosen an Algorithm
+
+        --> 1. Extracting Data / Requirement Gathering
+            ---> Google Data --> General Problems 
+            ---> Specific Problems ---> Highly Costly data
+        --> 2. Labelling Data --->
+            ---> General Problems Labelling --->  
+            ---> Specific Problems Labelling ---> 
+        --> 3. Architect a Machine Learning Model
+            ---> what kind of data it is?
+                ---> Lot of features
+                ---> Data is limited
+            ---> what is the purpose?
+            ---> Is inference time matters?
+            ---> Is model size matters?
+            ---> Architect --> adopt any architeture
+
+        ---> 4. Train the ML Model
+            ---> Labelled data with you
+                ---> How the whole distributed?
+                ---> How the whole data distributed with respect to the realtime data?
+
+            ---> US --> Military 
+
+            ------->  Every Season photos labelled -- 10000 
+                        ----> 3 seasons --> 3 types
+                        ----> 9 different types
+                        ----> 10000/9 ==>
+                        ----> 
+                        Uniformity --> Statical Formulae ---> Chi Score
+
+            ----> Different data
+                    ---> Train Data
+                    ---> Validation Data/Holding Data --- distribution of the realtime data
+                    ---> Test Data
+
+
+                    ----> 10000 ---> Labelled Data & Properly distributed or uniformed data
+                            -----> split your data ---> (80,20)
+
+                            8000 ---> Train Data
+                            2000 ---> Validation ---> Predictions 
+
+
+                            --- Loss ---> 
+                                    Actually there is no human
+                                    If your model predicts there is a human --->
+
+                                    How many are true predictions -->
+
+                                    8000 examples ---> Accuracy
+
+                                    100 exmples wrong predict 
+
+
+                                    Evaluation Metric (Precision, Recall, F1 Score, Confusion Matrix, loss)
+                                    Training Accuracy ----->         == 98.75%
+                                    Training Error rate ---> 100/8000 == 1.25%
+
+                                    Validation Accuracy ----->       == 95%
+                                    Validation Error rate ---> 100/2000 = 5% 
+
+                            ---- Train Accuracy & Validation Accuracy
+
+                            ----> motive ---> We have to concentrate on Validation Accuracy
+
+                    -----> Generative ---> will generate validation and test datasets 
+
+
+        ---> Start ML Training Model --> Train and Validation data
+
+        ------> 5. Testing
+                            
+                            Monitoring
+                            
+                            Test Data ----> Realtime -- Unlabelled data
+                            prediction ---> Test Error rate and Accuracy 
+
+        ------> 6. Repeat the cycle

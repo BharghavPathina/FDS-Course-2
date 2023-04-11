@@ -1,0 +1,113 @@
+Data
+
+    ---> Train/Validation/Test Split
+
+    ---> Train/Validation
+
+
+            validation/dev/cross-hold data/test 
+
+    ----> Splitting Mechanisms
+
+        ---> 500 ----> 50:50 / 70:30
+
+        ---> 10000 ---> 80:20 ---> 80:10:10
+
+            1. Train Data 8000
+            2. Validation 2000
+
+
+        ---> 1000000 ----> 99:1 ---> 98:1:1
+
+            1. Train Data 990000
+            2. Validation 10000
+
+    ---> You will Train ML Model
+
+        ----> 2 Metrics --->
+            1. Accuracy ==> how many number of examples are correctly predicted/total number of examples
+            2. Loss ======> Sigma(1,m) (Y^-Y)^2/2
+                1. Binary Cross Entropy -- Binary Classifier
+                2. Categorical Cross Entropy --- Multi Class Classifier
+                3. Mean Squared Error ---- Regressors
+
+
+        Train Data & Validation Data
+
+        ML Training Flow:
+            1. ML Model ---> (Linear, Neural Network)
+            2. Weights initialize (random weights)
+            3. Forward Propagation
+                1. ML Model will take Train data
+            4. Gradient Descent (Backward Propagation)
+                1. Update Weights
+            5. With Updated Weights 
+                1. ML Model will forward propagate with Validation/Train Data
+                2. Loss -- Val Loss, Train Loss
+                3. Accuracy -- Val Accuracy, Train Accuracy
+            
+            6. You will repeat the some iterations
+
+
+            ---> Train Accuracy & Train Loss/Train Error
+            ---> Validation Accuracy & Validation Loss/Validation Error
+
+
+    ---> Bias and Variance
+
+        Variance: Average variability in the model predictions for the given dataset--train/validation
+        
+                Train Loss is very less & Validation Loss is high ---> Variance
+
+                ---> Overfitting the ML Model
+                ---> Learning the noise
+
+                ---> Undesirable State
+
+        Bias: Error Between average model predictions and ground truth (Actual Y)
+
+                Train Loss is high and Valdiation loss is very high ---> Bias
+
+                ---> Underfitting the ML Model
+                ---> Not even learning the train data properly
+
+
+
+        Train Loss ---> 1%
+        Validation Loss ---> 15% 
+
+            ----> Learning noise in the data. --- Variance
+            ----> Over training
+    
+
+        
+        Train Loss ---> 10%
+        Validation ---> 10%
+
+            ---> Bias
+            ---> Underfitted
+            ---> Not even learnt train data --- Bias
+
+
+
+Strategies for above problems:
+
+        ---> Bias ---->
+                Underfitting
+
+                ----> Neural Network more bigger & change architecture
+                ----> Train More
+
+
+        ---> Variance ---->
+                ----> Learn Noise in data
+                ----> Overfitting the data
+
+                ----> New data
+                ----> Regularization 
+                        1. Regularization
+                        2. Dropout
+
+
+        ---> Bias Variance Tradeoff ---> Optimal place in Bias & Variance
+

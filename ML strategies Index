@@ -1,0 +1,15 @@
+ML Flow
+Spliiting Data
+Bias & Variance
+Regualrization & Dropout
+Normalizating Inputs
+Batch Normalizating Activations
+---> Covariate Shift
+Optimization Algorithms (Gradient Descent)
+    ---> Momemntum
+    ---> RMS Prop
+    ---> Adam
+
+
+Model Evaluation
+    --> All metrics for all kind of models
