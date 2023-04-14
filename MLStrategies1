@@ -201,3 +201,84 @@ Batch Normalization:
 Quantization:
     ---> Float 64
     ---> Float 16
+
+
+
+
+
+Vanishing & Exploding Problem --->
+ ----> When you have a very deep neural network ---> Due to the random weight initizalation
+ some how Weight of particular layer L becomes an Identity function with Identity value more than 1 ---> Exploding Problem
+
+ -------> This will incur a huge hike in the loss
+
+
+    Example: lth layer Weights[1.5 0
+                                0  1.5]
+
+                Z = W.T * X
+
+
+
+Y^(L) = W(L).T * A(L-1) 
+
+Y^(L) = W(L).T * activation[W(L-1).T*A(L-2)]
+
+activation as Identity function and bias as 0
+
+Y^(L) = W(L).T *[W(L-1)*[W(L-2)*[W(L-3)*[........*W[1]*X]]]]
+
+
+Y^(L) = W^L * X
+
+Y^(L) = (1.1*1.1)^L * X
+
+Y^(L) will have more value ---> Loss == abs(Y^-Y)  ----> Huge hike in loss ---> Exploding Problem
+
+
+        ---> If your weights in above situation is < 1 and is and Identity matrix then Network will suffer from 
+        Vanishing Problem
+
+Y^(L) = (0.9*0.9)^L * X
+
+        ----> Loss == abs(Y^-Y) ----> HUge Hike in loss ---> Vanishing Problem
+
+Weight Initialization
+
+---> initizalation of weights should be properly
+
+        ===> Weights = np.random.randn([2,2]) * sqrt(1/number of nodes in layer l)
+
+             Weights = np.random.randn([2,2]) * sqrt(1/number of nodes in previour of lth layer)
+
+             Weights = np.random.randn([2,2]) * sqrt(2/number of nodes in lth layer + number of nodes in l-1th layer)
+
+
+
+
+
+Activation Functions:
+
+
+
+========> Neural Networks will add non linearity to the functions
+
+
+Sigmoid Function -===>
+
+ReLu ===> f(x) = {
+    x if x>=0
+    0 if x<0
+}
+
+Leaky ReLU ==> f(x) = {
+    x if x>=0
+    max(0.01(x),x)
+}
+
+TanH === f(x) = {
+    e^x - e^-x/e^x + e^-x
+}
+
+
+F(W.T.X + b)
