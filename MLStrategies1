@@ -266,6 +266,10 @@ Activation Functions:
 
 Sigmoid Function -===>
 
+Sigmoid ==> f(x) = {
+    1/1+e^-x
+}
+
 ReLu ===> f(x) = {
     x if x>=0
     0 if x<0
@@ -282,3 +286,61 @@ TanH === f(x) = {
 
 
 F(W.T.X + b)
+
+
+
+Optimzations:
+
+Gradient Descent: -- Minimizing Problem
+
+    ---> Batch Gradient Descent
+    ---> Mini Batch Gradient Descent
+    ---> Stochastic Gradient Descent
+
+
+Batch Gradient Descent ===>
+
+    One Iteration will take whole data as an input and only one backward Propagation
+
+    --> Number Iterations ---> epoch
+
+Mini Batch Gradient Descent ===>
+
+    One Iteration will have some of the data(Mini batch) only backward propagation for the mini batch
+
+    Epoch ===> If you complete whole train dataset through training phase ---> epoch 
+
+    Iteration ===> couple of iterations will make you one epoch
+
+Stochastic Gradient Descent ===>
+
+    Stochastic == Probabilistic
+
+    One example at a time ---> randomly 
+
+    number of examples m -->
+    what is the probability of picking 1 ==> 1/m
+
+
+    One Iteration ==> One example and only one backward propagation
+
+
+
+Batch ---> Limited 2000,3000 ===> structural examples
+Mini Batch ---> Huge data ===> mini batches ===> MINI_BATCH_SIZE = # examples in each batch ===> power 2
+Stochastic ---> Limited --> Will be good in case of train examples are uniform in distribution
+
+
+
+        uniform distribited data:
+            ---> Every example ===> This will not effect the loss or backward propagation much
+
+        non uniform distributed data:
+            ---> Every Example ==> different loss ---> you will update weights differently ---> next example loss again high
+
+
+
+Optimization Algorithms
+
+    ---> Gradient Descent-- Algo
+    --- Other Types of it
