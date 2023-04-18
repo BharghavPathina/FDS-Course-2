@@ -1,0 +1,45 @@
+TP = The number of examples which were truly predicted as positives
+FN = The number of examples which were wrongly predicted as negative even they are positive
+FP = The number of examples which were predicted as positive but they are negative in real
+TN = The number of examples which were truly predicted as negatives
+
+
+Accuracy = TP+TN / TP+FP+FN+TN ---> Total Accuracy
+
+    **** Precison: How many are predicting positive out of total predicted positives
+
+                    Precison = TP/TP+FP
+
+                Example: Recommendation Systems
+
+    **** Recall(Senistivity): How many are predicting positive out of total actual positives
+                    
+                    Recall = 45/60 = TP/TP+FN
+                Example: Heart attack prediction ---> FN == Very less but achieving FPs 
+
+
+    **** F1 Score : F1 = 2 * (Precision * Recall)/(Precison + Recall) consider FPs and FNs
+
+
+    
+
+FNR ==> FN / TP+FN+FP+TN
+
+FPR ==> FP / TP+FN+FP+TN
+
+
+
+
+Problem: I have 100 examples. Out of 100 examples 60 are positives (C1) and 40 are negatives (C2). My ML Model is 
+predicting 45 as positives out of 60 and 32 as negatives out of 40 negatives.
+
+TP = 45
+TN = 32
+FP = 8   Total actual Negatives - TN
+FN = 15  Total actual positives - TP
+
+Total truly predicted = TP+TN
+
+Total actual Positives = TP+FN
+
+Total actual Negatives = TN+FP
