@@ -8,13 +8,13 @@ Accuracy = TP+TN / TP+FP+FN+TN ---> Total Accuracy
 
     **** Precison: How many are predicting positive out of total predicted positives
 
-                    Precison = TP/TP+FP
+                    Precison = TP/TP+FP --- w.r.t tryuly predicted positives
 
                 Example: Recommendation Systems
 
-    **** Recall(Senistivity): How many are predicting positive out of total actual positives
+    **** Recall(Senistivity) (TPR): How many are predicting positive out of total actual positives
                     
-                    Recall = 45/60 = TP/TP+FN
+                    Recall = 45/60 = TP/TP+FN --- w.r.t actual positives
                 Example: Heart attack prediction ---> FN == Very less but achieving FPs 
 
 
@@ -23,15 +23,32 @@ Accuracy = TP+TN / TP+FP+FN+TN ---> Total Accuracy
 
     
 
-FNR ==> FN / TP+FN+FP+TN
+FNR ==> FN / TP+FN --- w.r.t Actual Positives
 
-FPR ==> FP / TP+FN+FP+TN
+FPR ==> FP / Total number of actual Negatives
+    ===> FP / TN+FP --- w.r.t Actual Negatives
+
 
 
 
 
 Problem: I have 100 examples. Out of 100 examples 60 are positives (C1) and 40 are negatives (C2). My ML Model is 
 predicting 45 as positives out of 60 and 32 as negatives out of 40 negatives.
+
+
+Probability Score of a prediction in between (0,1)
+
+Threshold1 === 0.5
+
+FPR and TPR
+
+Threshold2 = 0.75
+FPR and TPR 
+
+Threshold3 = 0.9
+FPR and TPR 
+
+
 
 TP = 45
 TN = 32
@@ -43,3 +60,38 @@ Total truly predicted = TP+TN
 Total actual Positives = TP+FN
 
 Total actual Negatives = TN+FP
+
+
+
+TN = There are few C1,C2,C3 examples 
+
+    not C1 = (C2,C3)
+
+    TN of C1 ===> Model should predict (C2,C3) 
+
+
+
+
+Hyper Paramteter Tuning:
+
+HyperParameter: Parameter which has no stability
+
+The process of finding a particular value for your parameter to fit your problem very well.
+
+
+
+List of hyper parameters:
+    1. Learning Rate
+    2. Number of layers
+    3. Number of nodes in layer
+    3. what activation
+    4. Regularizer parameter lambda
+    5. Dropout percentage
+
+
+
+Through some frameworks
+
+    ---> Keras Tuner
+    ---> Grid Search
+    ---> AWS Sagemaker --> HyperParameter Tuner
