@@ -1,0 +1,98 @@
+Convolutions
+
+    Convolutional Valid Operation:
+
+    ===> Input Image (Grey Image) ==> (w,h) -- Raw Input Image
+    ===> Kernel or filter ===> Square matrix and the order of the matrix should be odd number
+        
+
+        Padding = 0
+        Stride = 1
+        Input Image size should be square matrix = (n,n)
+        Kernel or filter size                    = (f,f)
+
+        Then the output of the Convolution Operation = (n-f+1)
+
+
+    Example: (6,6) & (3,3) ==> (6-3+1) ==> (4,4) (Shrinked)
+
+        ---> Convolutional Oeration Advanatges ==> Reducsing number of features
+
+        ==========================================>  
+
+
+    Convolutional Same Operation:
+
+        --> Padding (p) = 1
+            Stride (s) = 1
+        ---> Then the output of the Convolution Operation = (n-f+2p+1)
+
+    Example: 6-3+2+1 = 6
+
+    Strided Convolutional Operation:
+
+        --> Stride (s) 
+
+        ==> Then the output of the convolution operation = ((n-f+2p)/s +1)
+
+        When we are doing strining operation the (n-f+2p) or (n-f) should be divisable by s
+
+    Example: (7-3+2)/2 + 1 => (4,4)
+
+
+Every Convolution operation on any image will produce a feature 2D array always
+
+
+    Input Image Shape (Raw Image) = (w,h,3)
+
+    Reshaped Image                = (n,n,3)
+
+    filter Shape                  = (f,f,3)
+
+    Number of filters             = k
+
+    padding = 0
+    stride = 1
+    Then the output of the convolutional operation over volumes = ((n-f+1),(n-f+1),k)
+
+    General formula                                             = (((n-f+2p)/s+1), ((n-f+2p)/s+1), k)
+
+
+
+
+    What are filters/kernels?
+
+    ===> Filter is a parameter W
+
+    Y = MX + C
+
+
+    Y = X * W + B ===> Convolutional Operation
+
+
+        Operator Overloading
+
+
+
+    Shapes of all tensors
+
+
+
+            X = (n,n,3)
+
+            W = (k,f,f,3) --> number of filters = k
+
+            X * W = (n-f+1,n-f+1,k)
+
+            B = Scalar number 
+
+            Broadcasting B as to the shape (n-f+1,n-f+1,k)
+
+            Vectorization
+
+            Y shape = (n-f+1,n-f+1,k)
+
+
+    Number of parameters for particulat operation
+
+            Number of parameters = k*f*f*3 + 1

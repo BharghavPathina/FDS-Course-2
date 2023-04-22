@@ -1,12 +1,12 @@
 import os
 INPUT_SHAPE = (14,)
 FINE_TUNE_LAYERS = {
-        'MIN_VAL':80,
-        'MAX_VAL':150
+        'MIN_VAL':1,
+        'MAX_VAL':15
     }
 FC_LAYERS = {
         'MIN_VAL':1,
-        'MAX_VAL':20
+        'MAX_VAL':10
     }
 
 MODEL_CONF = {

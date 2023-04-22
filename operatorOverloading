@@ -1,0 +1,26 @@
+int *(int a, int b){
+    return a*b
+}
+
+//Template T = int,float,doyuble
+// I have a template with all basic data types
+T *(T a, T b){
+    return a*b
+}
+
+//Template T1 = pandas Series, NUmpy array
+T1 *(T1 a, T1 b){
+    if length(a) == length(b){
+        newarray = []
+        for i in length(a){
+            newarray.append(a[i]*b[i])
+        }
+    }
+    return "mUltplication Not possible"
+}
+
+tf *(tensor, tensor){
+    {
+       convolution operartion
+    }   
+}
