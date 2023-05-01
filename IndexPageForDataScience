@@ -1,0 +1,57 @@
+
+Introduction to Data, Data Engineering, Data Analysis & Data Science
+Frameworks
+Python 
+Python Basics
+Python Data types
+Python Collections (List,Tuple,Set,Dictionaries)
+Loops
+Control Structures
+Reading Input 
+    --> Type Cast
+    --> Exception Handling --> Try Catch
+
+Python functions
+    --> positinal only arguements
+    --> Keyword only arguments
+    --> default arguments
+
+LMS Project --> employee Management System --> Bank Management System --> Train Ticket Booking
+
+Python Advanced Functions
+    ---> Filter
+    ---> Map
+    ---> Lambda
+    ---> Reduce
+    ---> Accumulate
+    ---> Decorator
+    ---> Generators
+
+Exception Handling
+
+Python File Handling ---> JSON
+
+Python OOPs
+    --> All OOPs concepts
+
+Python Numpy, OpenCV
+
+Data Analysis Project
+    ---> Pandas
+    ---> Pandas Profiling
+    ---> Statistics
+
+
+Machine Learning
+    Basic Structural ML Models
+    Neural Network
+    Callback
+
+ML strategies
+
+CNN
+    Clasification
+    Object detection
+    Semantic Segmentation
+
+Introduction to advanced  concepts

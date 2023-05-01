@@ -1,0 +1,8 @@
+Pixel by Pixel Classification
+
+basic operational unit in Semantic Segmentation is Transpose Convolution
+
+
+Features you have to output the mask 
+
+

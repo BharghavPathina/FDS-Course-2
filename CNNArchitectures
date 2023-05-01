@@ -102,3 +102,87 @@ Efficient Net:
         3. Width of the NN (#no of nodes in layer)
 
     EfficientB1 -B7
+
+
+
+Transfer Learning
+
+    Batching ===> 
+
+            GPU Memory = 8GB
+            Availabale GPU Memory = 4GB
+
+            Total number of examples = 1200
+            1 image is around 600KB
+
+            batch size of 32 ==> 1200/32 --->37 * 600KB = 22200KB
+                                                        = 22.2MB
+
+
+            1. Prefetch ---> pipeline
+            2. Cache
+
+        12GB
+
+
+Data Augmentation:
+
+    Augmentation Techniques:
+        1. Rotate
+        2. 
+
+
+
+
+Transfer Learning Steps:
+
+
+    1. Select Base Model
+        "ImageNet" 
+        1. MobileNetV1
+        2. MobileNetV2
+        3. ResNet101
+        4. ResNet50
+        5. ResNet152
+        6. InceptionNetV2
+        7. EfficientNetB1
+        8. EfficientNetB7
+
+        tf.keras.applications.mobile_net_v2.MobileNetV2(include_top=False)
+
+        1. MobileNetV2 --> trainable = False
+        2. fineTuning
+            ---> First 100 layers trainable = False
+            ---> Next 50 layers trainable = True
+
+    2. Rescale our dataset
+
+        1. (0-1) = 1/255
+        2. (-1,1) = 1/127.5
+
+    3. Augmentation (Optional)
+
+        1. Rotate
+        2. Flip
+        3. Birghtness
+        4. Contrast
+
+    4. Specific base model ---> preprocess_input
+
+        tf.keras.applications.mobile_net_v2.preprocess_input
+
+    5. base_model
+
+        1. Whole base model is not trainable
+    
+    6. Dense layers
+        1. trainable -- weights will be updated
+    7. Output Layer
+        1. trainable -- weights will be updated
+
+
+fineTuning Transfer learning:
+
+        fineTuning Base model with the new custom data is called finetuning Transfer learning
+
+    

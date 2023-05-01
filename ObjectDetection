@@ -1,0 +1,106 @@
+Object Detection is a problem of detecting objects in an image and annotating around the objects 
+
+    1. KeyPoints
+    2. Bounding Box
+    3. Polygon
+    4. Segmentation Mask
+
+
+Single Object Detection can have multiple classes
+---> Single object in an image 
+
+Data Preprocessing and Data Conversion
+
+    1. Region Based Algorithms
+        1. R-CNN
+        2. Fast R CNN
+        3. Faster R CNN
+        4. Mask R CNN
+    2. YOLO
+    3. UNet
+    4. Deeplab
+
+
+Preprocessing of labelled data for a particular algorithm
+
+GPUs and Hardware DataSet in Memory ===> Dataset Object
+    Batching 
+    Prefetch
+    cache
+
+ML model will start running
+
+    Dataset 
+
+    Input along with this you also need label output
+
+Prediction
+
+Metrics
+
+    1. Mean Squared Error
+    2. Confusion matrix
+    3. Precision
+    4. Recall
+    5. F1 Score
+    6. Accuracy
+
+    7. IoU
+    8. Pixel Accuracy
+
+
+Performance ANalysis
+    ML Starategies
+
+
+Labelling tool generate mostly txt files or json
+
+pre process my labelled files to compatible to my model --> text file
+
+Image as input and Label will 
+
+    measures of a bounding box = [b(x),b(y),b(w),b(h)]
+    class                      = c1,c2,c3
+
+    label                      =[Yes/No,b(x),b(y),b(w),b(h),c1,c2,c3,c4]
+
+
+Classifer and Regressor in a Same Model
+
+Multiple Objects in a single image
+
+If you have fixed numer of objects in an image --> The above solution will by simple modifications
+
+Sliding Window
+Convolutional Sliding Window
+YOLO
+
+
+Region Based
+
+Sliding Window: Window which will traverse across the image and each part/window of the image will be given object detection algorithm.
+    ---> Slow
+    ---> Higher Memory Usage
+
+Convolutional Implementation of Sliding Window:
+    ----> Image to window size
+
+YOLO:
+    ---> Grid
+    ---> Look once for the data label preparation
+    ---> Anchor Boxes (Optional)
+    ---> Convolutional implementation to get label size
+    ---> Non Max Supression
+        ---> Maximum IoU of all possible / predicted objects wrt actual object
+
+
+
+Callbacks:
+
+    1. EarlyStop
+    2. ModelCheckpoint
+        ---> checkpointing your models at different places ---> val loss
+    3. LearningRateDecay --- it will be decayed when there is no change in val loss or any abnormality
+        --- Learning rate 
+            ---> it should be high
+            ---> It should decay

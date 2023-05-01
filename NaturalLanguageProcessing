@@ -1,0 +1,31 @@
+
+NLP and NLU
+
+Challenges:
+    1. Text Recognition
+        1. Tokenization
+        --> Hadoop
+
+    2. Text Understanding
+        --> Challenges:
+        1.  Anaphora problem --> context
+        2. Tharun at the bank of river
+        3. Grammatical Problems.
+        4. How ML will try to Understanding
+
+    3. Speach Recognition --> Text Conversion
+    4. Machine Translation ---> Translators 
+    5. Transformers
+    6. Generative Models
+    
+
+ML Approaches
+
+
+        1. Sequence Models
+        2. Recurrent Neural Networks
+        3. Transformers
+        4. Generators
+
+
+Reinforcement Learning --->
